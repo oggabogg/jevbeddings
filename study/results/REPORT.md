@@ -1,0 +1,207 @@
+# jevbeddings — BANKING77: tolkelig gjenfinning med JEV
+
+**Fullført:** 2026-09-26T17:18:04.384Z. **Modell:** jev-1.13.0. **Omfang:** 10,003 dokumenter, 3,080 testsøk, 34 navngitte features, 100 tilleggssøk, åtte styrbarhetstester og 38 ablasjoner.
+
+## Hovedfunn
+
+Beste Top-1-resultat i denne studien var **JEV + cosinus: 83.67 %**. Beste JEV-featuremetode var **JEV + cosinus: 83.67 %**. BM25 oppnådde 80.10 %. Dette er faktisk gjenfinning mot hele treningssettet, ikke direkte klassifikasjon mellom 77 etiketter.
+
+Vektet relevans ga 28.02 % Top-1 og 49.81 % Hit@5. Cosinus ga 83.67 % Top-1. Forskjellen mellom dem er -55.65 prosentpoeng. Eksperimentet støtter derfor ikke en generell antakelse om at bevaring av magnitude alltid gir bedre gjenfinning; resultatet må vurderes for akkurat dette skjemaet og denne oppgaven.
+
+På de bredere, sammensatte søkene var Precision@10 **83.20 % med eksplisitte feature-krav**, **68.00 % med JEV-tolkede krav**, og **49.70 % med BM25**. Representasjonen ser dermed vesentlig mer nyttig ut for eksplisitte egenskapskrav enn den svake dot-product-klassifikasjonen alene skulle tilsi. Dette gjelder de forhåndsdefinerte proxy-oppgavene i studien.
+
+Styrbarhetstestene bekrefter den numeriske kontrollen, men gir begrenset dokumentasjon på forbedret semantisk filtrering: 7 av 8 hadde allerede null uønskede etiketter i topp 10 før straff. I to tilfeller falt ønsket treffpresisjon ved sterk straff.
+
+JEV-panelet viste **USD 2.0765** for Jevbeddings-prosjektet. Panelet merker beløpet «Estimated»; det er ikke en faktura. De 13,183 registrerte studiekallene gir separat et loggbasert estimat på USD 2.0686. Ingen andre modeller eller embeddingtjenester ble brukt. Alle 13 083 offisielle tekster er vurdert.
+
+## Hvordan studien ble gjennomført
+
+BANKING77 har 77 banking-intents og et offisielt train/test-split. Vi brukte train som søkekorpus og testmeldingene som queries. Relevans betyr her at dokument og query har samme originaletikett. Kilde: [PolyAI-datasettet](https://github.com/PolyAI-LDN/task-specific-datasets) og [Casanueva mfl. (2020)](https://aclanthology.org/2020.nlp4convai-1.5/).
+
+Skjemaet ble frosset 2026-09-26T16:57:27.642Z, før testfilen ble hentet. De 34 dimensjonene beskriver objekt, hendelse/problem, brukerønske og tilstand. JEV fikk bare meldingstekst og faste Noul-spørsmål. Ingen intent-etiketter eller merkede eksempler ble sendt til modellen. Det er likevel overlapp mellom enkelte features og datasettets temaer; vi påstår ikke at domeneskjemaet er helt uavhengig av taksonomien.
+
+Query og dokument fikk samme extractor i E1/E2. Da er querytallene evidens for egenskaper, ikke ønskede feature-vekter. E3/E4 bruker derimot eksplisitte søkekrav. Denne forskjellen er viktig når resultater overføres til produktet.
+
+BM25 bruker kun ordstatistikk fra train, k1=1.2 og b=0.75. Vektet relevans bruker w_i=log((N+1)/(df_i+1)), der df_i er antall traindokumenter med score minst 0.5. Ingen parametere ble valgt på testresultater. Alle frekvenser og vekter finnes i [feature-weights.json](feature-weights.json).
+
+## E1/E2: alle 3 080 testmeldinger
+
+| Metode | Top-1 / P@1 | 95 % Wilson-intervall | Hit@5 | P@5 | Recall@5 | MRR | nDCG@10 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| BM25 | 80.10 % | 78.65 % – 81.47 % | 93.80 % | 70.34 % | 2.93 % | 0.8611 | 0.6769 |
+| JEV + cosinus | 83.67 % | 82.32 % – 84.93 % | 93.60 % | 78.44 % | 3.22 % | 0.8802 | 0.7678 |
+| JEV + dot product | 25.97 % | 24.46 % – 27.55 % | 49.61 % | 29.99 % | 1.08 % | 0.3715 | 0.3025 |
+| JEV + vektet relevans | 28.02 % | 26.46 % – 29.63 % | 49.81 % | 31.86 % | 1.16 % | 0.3863 | 0.3203 |
+
+**Hit@5** betyr at minst ett av fem treff har riktig intent. **Recall@5** er antallet riktige blant fem delt på alle riktige dokumenter i korpuset. Siden hver intent har mange treningsdokumenter, er ekte Recall@5 naturlig langt lavere enn Hit@5. MRR bruker posisjonen til første relevante dokument i hele rangeringen; nDCG@10 bruker binær relevans.
+
+Normalisering med en konstant per query endrer ikke rangeringen. Forskjellen mellom dot product og vektet relevans skyldes derfor globale feature-vekter. Cosinus normaliserer også dokumentene, og kan dermed endre rekkefølgen. Eksemplet med 0.1 versus 1.0 viser en matematisk svakhet ved cosinus for visse eksplisitte egenskapskrav; det beviser ikke at cosinus skal tape på alle semantiske gjenfinningsoppgaver.
+
+### Hvorfor sviktet dot product?
+
+Dette er en **beskrivende analyse gjort etter hovedresultatet**, uten endring av metode eller nye modellkall. Vi undersøkte hvor mange forskjellige dokumenter som vant søkene, og hvor mange sterke features vinnerne hadde.
+
+| Metode | Ulike toppdokumenter | Andel søk vunnet av de 10 vanligste dokumentene | Gj.sn. sterke features hos vinneren |
+| --- | --- | --- | --- |
+| BM25 | 2383 | 1.46 % | 4.69 |
+| JEV + cosinus | 2456 | 1.40 % | 4.75 |
+| JEV + dot product | 232 | 42.69 % | 10.39 |
+| JEV + vektet relevans | 255 | 36.59 % | 10.05 |
+
+Et gjennomsnittlig dokument i korpuset har 4.96 features med verdi minst 0.5. Dot product favoriserte vinnere med 10.39 slike features, og bare ti dokumenter vant 42.69 % av alle søk. Dette er forenlig med at dokumenter som scorer høyt på mange egenskaper får et systematisk fortrinn, selv når ekstra egenskaper ikke beskriver queryens intent. Det er en dokumentert assosiasjon, ikke alene et kausalt bevis. Cosinus reduserer denne tendensen ved å normalisere dokumentets lengde. Full analyse og hyppige vinnerdokumenter er i [diagnostics.json](diagnostics.json).
+
+### Parede forskjeller i Top-1
+
+| Sammenligning (første minus andre) | Forskjell, prosentpoeng | 95 % bootstrap-intervall |
+| --- | --- | --- |
+| bm25_minus_cosine | -3.57 | -5.26 – -1.92 |
+| bm25_minus_dot | 54.12 | 52.08 – 56.20 |
+| bm25_minus_weighted | 52.08 | 50.06 – 54.12 |
+| cosine_minus_dot | 57.69 | 55.81 – 59.58 |
+| cosine_minus_weighted | 55.65 | 53.73 – 57.53 |
+| dot_minus_weighted | -2.05 | -3.05 – -0.97 |
+
+Bootstrap: 2 000 parede resamplinger, fast seed, uten korreksjon for flere sammenligninger. Intervallene beskriver variasjon over dette benchmarkets meldinger, ikke generalisering til alle bankdomener. Fullstendige resultater per intent og forvekslinger finnes i [results.json](results.json).
+
+### Duplikatkontroll
+
+Normalisering: små bokstaver og sammenslått whitespace. Vi fant 4 ekstra duplikatrader i train, 1 i test og 7 testrader med tekst som finnes i train. Hovedresultatet beholder offisiell split. Etter at de overlappende testqueryene fjernes:
+
+| Metode | Antall queries | Top-1 | Hit@5 | MRR |
+| --- | --- | --- | --- | --- |
+| BM25 | 3073 | 80.05 % | 93.78 % | 0.8608 |
+| JEV + cosinus | 3073 | 83.63 % | 93.59 % | 0.8799 |
+| JEV + dot product | 3073 | 25.97 % | 49.66 % | 0.3716 |
+| JEV + vektet relevans | 3073 | 28.05 % | 49.82 % | 0.3866 |
+
+## E3: 100 sammensatte søk
+
+25 forhåndsdefinerte semantiske grupper har fire formuleringer hver. Relevante dokumenter defineres gjennom intent-grupper fra train. Dette gir reproduserbare **proxy-vurderinger**, ikke uavhengige menneskelige vurderinger av hvert query–dokument-par. Formuleringene innen hver gruppe er korrelerte; 100 formuleringer er ikke 100 uavhengige søkeoppgaver.
+
+| Metode | P@10 | Recall@10 | Hit@10 | MRR | nDCG@10 | Krever gjennomgang |
+| --- | --- | --- | --- | --- | --- | --- |
+| BM25 | 49.70 % | 1.52 % | 92.00 % | 0.6823 | 0.5110 | 0/100 |
+| Eksplisitte feature-krav | 83.20 % | 2.66 % | 92.00 % | 0.8854 | 0.8372 | 0/100 |
+| JEV-tolket søk | 68.00 % | 2.12 % | 83.00 % | 0.7000 | 0.6721 | 6/100 |
+
+Eksplisitte feature-krav isolerer representasjon og rangering fra feil i tolkningen. JEV-tolkede søk omfatter begge leddene. Søk med ukjente konsepter, usikre harde filtre eller ingen aktive krav gir ingen treff og teller som null i den strenge evalueringen. De er ikke fjernet fra nevneren. Se [e3-queries.json](e3-queries.json) og [e3-interpretations.json](e3-interpretations.json).
+
+## E4: kan vi styre treffene?
+
+| Case | Uønsket i topp 10, før | Ved straff 1.0 | Ved hardt filter | Ønsket P@10, før → hardt | Kandidater etter hardt filter |
+| --- | --- | --- | --- | --- | --- |
+| withdrawals_no_declines | 0.00 % | 0.00 % | 0.00 % | 100.00 % → 100.00 % | 8675 |
+| card_no_pending | 0.00 % | 0.00 % | 0.00 % | 90.00 % → 100.00 % | 3251 |
+| transfers_no_fees | 0.00 % | 0.00 % | 0.00 % | 100.00 % → 100.00 % | 8235 |
+| topups_no_pending | 0.00 % | 0.00 % | 0.00 % | 100.00 % → 100.00 % | 3251 |
+| unrecognized_no_cash | 30.00 % | 0.00 % | 10.00 % | 70.00 % → 70.00 % | 9019 |
+| cards_no_delivery | 0.00 % | 0.00 % | 0.00 % | 90.00 % → 90.00 % | 9567 |
+| transfers_no_declines | 0.00 % | 0.00 % | 0.00 % | 100.00 % → 100.00 % | 8675 |
+| fees_no_cards | 0.00 % | 10.00 % | 0.00 % | 0.00 % → 0.00 % | 4485 |
+
+Vi testet straffestyrke 0, 0.25, 0.5 og 1, samt hardt filter <=0.2. Antall mekaniske monotonibrudd: **0**. Antall numeriske hardfilterbrudd blant returnerte treff: **0**. Disse tallene verifiserer matematikken, ikke automatisk korrekt semantikk. JEV kan gi lav declined-score til et dokument med declined-intent; da kan et numerisk korrekt filter fortsatt slippe det gjennom. Ønsket treffkvalitet og kandidatfrafall er derfor også rapportert.
+
+I casen «unrecognized_no_cash» falt uønsket andel fra 30 % til 0 % med straff 1.0, mens hardt filter fortsatt slapp gjennom 10 %. I «cards_no_delivery» falt ønsket P@10 fra 90 % til 50 % med sterk straff; i «transfers_no_declines» falt den fra 100 % til 40 %. Disse resultatene står uendret i rapporten. Mange av de øvrige casene var lite utslagsgivende fordi det uønskede allerede manglet i topp 10. En sterkere fremtidig styrbarhetsevaluering bør forhåndsdefinere flere vanskelige kontrasttilfeller; denne studien bør ikke presenteres som et generelt bevis på overlegen styrbarhet.
+
+## E5: hvilke egenskaper bidrar?
+
+Samme JEV-verdier og gjenværende globale vekter brukes i alle ablasjoner. Vi fjernet fire familier og hver av de 34 features individuelt. Ingen nye modellkall eller tilpasning ble gjort.
+
+| Fjernet familie | Top-1 | Endring, prosentpoeng | Hit@5 |
+| --- | --- | --- | --- |
+| entity | 14.94 % | -13.08 | 29.58 % |
+| event | 21.98 % | -6.04 | 40.84 % |
+| user_intent | 23.51 % | -4.51 | 38.41 % |
+| state | 29.38 % | 1.36 | 48.05 % |
+
+De ti enkeltfeatures der fjerning ga størst reduksjon (eller minst økning) i Top-1:
+
+| Fjernet feature | Top-1 | Endring, prosentpoeng |
+| --- | --- | --- |
+| is_about_topup | 24.38 % | -3.64 |
+| charged_fee | 24.51 % | -3.51 |
+| wants_activate | 25.49 % | -2.53 |
+| is_about_transfer | 25.55 % | -2.47 |
+| is_about_identity_verification | 25.84 % | -2.18 |
+| card_not_received | 26.36 % | -1.66 |
+| duplicate_transaction | 26.79 % | -1.23 |
+| wants_change | 26.85 % | -1.17 |
+| expired | 26.88 % | -1.14 |
+| wrong_exchange_rate | 27.21 % | -0.81 |
+
+Fullstendige 38 ablasjoner finnes i results.json, med parede query-utfall i e5-ablation-per-query.json. Korrelasjon mellom features betyr at en liten ablasjonseffekt ikke beviser at en feature er unyttig; en annen kan bære lignende informasjon. Dette er beskrivende analyse, ikke et påfølgende skjemaoptimaliseringsløp.
+
+## Konkrete feil og treff
+
+Eksemplene er de første åtte feilene og første tre riktige resultatene i offisiell testrekkefølge for vektet relevans. De er ikke håndplukket for å støtte en konklusjon.
+
+| Query | Fasit-intent | Toppdokument-intent | Toppdokument |
+| --- | --- | --- | --- |
+| How do I locate my card? | card_arrival | lost_or_stolen_card | I thought I left my card at a restaurant, but they claim not to have it and now I don't have any idea where it is. I'm so worried that someone might be using it fraudulently. Is there any way to look into this? |
+| When will I get my card? | card_arrival | card_delivery_estimate | I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it? |
+| Is it normal to have to wait over a week for my new card? | card_arrival | card_delivery_estimate | I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it? |
+| still waiting on my new card | card_arrival | card_delivery_estimate | I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it? |
+| How long should my new card take to arrive? | card_arrival | card_delivery_estimate | I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it? |
+| Why won't my card show up on the app? | card_linking | activate_my_card | How long does it take to activate the card, as it does not look like its working? |
+| I would like to reactivate my card. | card_linking | pin_blocked | I blocked my card by mistake, how do I unblock it? |
+| Where do I link the new card? | card_linking | getting_virtual_card | I have lost my card, but need to place an online order! How do I get a virtual card instantly? |
+| I still have not received my new card, I ordered over a week ago. | card_arrival | card_arrival | I was supposed to receive my new card by now, but it hasn't came in. |
+| I ordered a card but it has not arrived. Help please! | card_arrival | card_arrival | 2 weeks ago I ordered my new card.  It isn't here.  What should I do? |
+| Is there a way to know when my card will arrive? | card_arrival | card_arrival | I have been waiting over a week. Is the card still coming? |
+
+### Hvorfor et konkret treff rangerte øverst
+
+**Feil treff:** «How do I locate my card?» → «I thought I left my card at a restaurant, but they claim not to have it and now I don't have any idea where it is. I'm so worried that someone might be using it fraudulently. Is there any way to look into this?». Fasit: `card_arrival`; hentet: `lost_or_stolen_card`.
+
+| Feature | Queryverdi | Dokumentverdi | Global vekt | Rått bidrag |
+| --- | --- | --- | --- | --- |
+| card_not_received | 0.9100 | 0.9000 | 3.5903 | 2.9405 |
+| security_concern | 0.4100 | 0.9700 | 2.6218 | 1.0427 |
+| is_about_card | 0.9600 | 0.9900 | 0.8913 | 0.8471 |
+| missing | 0.8700 | 0.9800 | 0.9635 | 0.8215 |
+| wants_status | 0.8200 | 0.7000 | 1.2352 | 0.7090 |
+| wants_information | 0.9600 | 0.8700 | 0.4241 | 0.3542 |
+
+Full bidragssum deles på 9.6414 og gir relevansscore 0.7517. Se alle 34 bidrag for 20 eksempler i [explanations.json](explanations.json).
+
+**Riktig treff:** «I still have not received my new card, I ordered over a week ago.» → «I was supposed to receive my new card by now, but it hasn't came in.». Fasit: `card_arrival`; hentet: `card_arrival`.
+
+| Feature | Queryverdi | Dokumentverdi | Global vekt | Rått bidrag |
+| --- | --- | --- | --- | --- |
+| card_not_received | 0.9800 | 0.9800 | 3.5903 | 3.4482 |
+| wants_status | 0.9700 | 0.9500 | 1.2352 | 1.1382 |
+| missing | 0.9800 | 0.9800 | 0.9635 | 0.9254 |
+| is_about_card | 0.9900 | 0.9800 | 0.8913 | 0.8647 |
+| pending | 0.9700 | 0.9500 | 0.8986 | 0.8281 |
+| incorrect | 0.7800 | 0.8700 | 1.0179 | 0.6907 |
+
+Full bidragssum deles på 10.8892 og gir relevansscore 0.7533. Se alle 34 bidrag for 20 eksempler i [explanations.json](explanations.json).
+
+
+## Kostnader og kjøretid
+
+Prosjektpanelet viste USD 2.0765, 49,439,654 inputtokens, 57,833,096 tokens totalt og 13,232 forespørsler med filteret «JEVbeddings» / «Last 7 days». Se [skjermbildet](jevbeddings-usage-2026-09-26.png) og [kostnadsnotatet](../KOSTNAD.md). Prosjekttotalen er ikke avstemt kall for kall mot studieloggene. Tabellen nedenfor beholder de opprinnelige loggbaserte estimatene.
+
+| Del | Kall | Inputtokens | Est. USD | Median ms | P95 ms | Feil / ekstra forsøk |
+| --- | --- | --- | --- | --- | --- | --- |
+| train | 10003 | 36,678,663 | 1.5405 | 301.4 | 358.6 | 0 / 1 |
+| test | 3080 | 11,290,130 | 0.4742 | 299.9 | 356.3 | 0 / 0 |
+| broad_query | 100 | 1,283,211 | 0.0539 | 376.1 | 479.5 | 0 / 0 |
+
+Estimatene bruker USD 0.042 per million inputtokens fra [JEVs modellreferanse](https://docs.typesafe.ai/models), kontrollert 2026-09-26. Outputtokens har ingen pris i dette estimatet. Uobserverte mislykkede forsøk kan likevel være belastet; tallene er ikke en faktura. Evalueringskoden brukte 36.1 sekunder lokalt. Vektormetodenes latens inkluderer en delt beregningspassering og kan ikke tolkes som et isolert hastighetskappløp.
+
+## Hva vi kan og ikke kan konkludere
+
+Studien måler faktisk hva dette fastlåste 34-dimensjonale skjemaet kan hente frem, sammenlignet med en klassisk ord-baseline og alternative matematiske scorer. Den viser eksplisitt hvordan hver feature kan inspiseres, vektes, straffes eller brukes som filter. Resultatene dokumenterer både informasjon som bevares og skiller som går tapt.
+
+Den dokumenterer **ikke** at JEV-features kan erstatte moderne embeddings generelt. Ingen ekstern embeddingmodell ble kjørt. Vi kjenner ikke JEVs eventuelle tidligere eksponering for BANKING77. Datasettene er engelske og smale; etikettene og proxy-judgments kan inneholde feil eller tvetydighet. Heller ikke sannsynlighetskalibrering for hver feature er etablert: BANKING77s intent-etiketter er ikke menneskelige fasitscorer for 34 egenskaper.
+
+Neste uavhengige validering bør bruke nye, private bankhenvendelser med menneskelige vurderinger av både egenskaper og søkeresultater. Et endret featureskjema må testes som en ny studie med et nytt holdout, ikke omtales som forbedring på det samme urørte testsettet.
+
+## Reproduserbarhet og kreditering
+
+Kontrollberegningen verifiserte alle 13083 tekstfingeravtrykk og lagrede JEV-verdier. En separat fullsortering av hele korpuset for 31 faste testqueries ga nøyaktig samme topp 10 og første relevante rang i alle 124 metodekontroller. Se [audit.json](audit.json). De 25 automatiske programtestene passerte også.
+
+Se [protokollen](../PROTOCOL.md), [implementeringspresiseringer](../AMENDMENTS.md), [kjøreinstruksjoner](../README.md) og [fulle maskinlesbare resultater](results.json). Dataset-commit: `57ec275d8078af65b7731c2a98be812d844a6d6b`. Schema SHA-256: `70781bf302e4d5b4521d38778de2910b352f547fccd8130d37600b299b70aa88`. Filkontrollsummer er i results.json. Koden, studieoppleggets operasjonalisering og rapporten er laget av Codex sammen med brukeren; alle runtime-modellvurderinger kommer fra JEV.
+
+BANKING77 er utgitt av Iñigo Casanueva, Tadas Temčinas, Daniela Gerz, Matthew Henderson og Ivan Vulić under CC-BY-4.0. Originaletiketter er beholdt. Dette er en uavhengig eksplorativ studie, ikke en offisiell benchmark-innsending eller en offentlig forhåndsregistrering.

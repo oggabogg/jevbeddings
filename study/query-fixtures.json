@@ -1,0 +1,1867 @@
+{
+  "broad_queries": [
+    {
+      "id": "card_payment_problems_1",
+      "group": "card_payment_problems",
+      "query": "problems with card payments",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "card_payment_not_recognised",
+        "card_payment_wrong_exchange_rate",
+        "declined_card_payment",
+        "pending_card_payment",
+        "reverted_card_payment?",
+        "transaction_charged_twice"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "incorrect": 0.4
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_payment_problems_2",
+      "group": "card_payment_problems",
+      "query": "trouble when paying with a card",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "card_payment_not_recognised",
+        "card_payment_wrong_exchange_rate",
+        "declined_card_payment",
+        "pending_card_payment",
+        "reverted_card_payment?",
+        "transaction_charged_twice"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "incorrect": 0.4
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_payment_problems_3",
+      "group": "card_payment_problems",
+      "query": "card payment issues",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "card_payment_not_recognised",
+        "card_payment_wrong_exchange_rate",
+        "declined_card_payment",
+        "pending_card_payment",
+        "reverted_card_payment?",
+        "transaction_charged_twice"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "incorrect": 0.4
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_payment_problems_4",
+      "group": "card_payment_problems",
+      "query": "something went wrong with a card purchase",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "card_payment_not_recognised",
+        "card_payment_wrong_exchange_rate",
+        "declined_card_payment",
+        "pending_card_payment",
+        "reverted_card_payment?",
+        "transaction_charged_twice"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "incorrect": 0.4
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "withdrawal_problems_1",
+      "group": "withdrawal_problems",
+      "query": "cash withdrawal problems",
+      "relevant_labels": [
+        "cash_withdrawal_charge",
+        "cash_withdrawal_not_recognised",
+        "declined_cash_withdrawal",
+        "pending_cash_withdrawal",
+        "wrong_amount_of_cash_received",
+        "wrong_exchange_rate_for_cash_withdrawal"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "withdrawal_problems_2",
+      "group": "withdrawal_problems",
+      "query": "issues taking money out of an ATM",
+      "relevant_labels": [
+        "cash_withdrawal_charge",
+        "cash_withdrawal_not_recognised",
+        "declined_cash_withdrawal",
+        "pending_cash_withdrawal",
+        "wrong_amount_of_cash_received",
+        "wrong_exchange_rate_for_cash_withdrawal"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "withdrawal_problems_3",
+      "group": "withdrawal_problems",
+      "query": "trouble withdrawing cash",
+      "relevant_labels": [
+        "cash_withdrawal_charge",
+        "cash_withdrawal_not_recognised",
+        "declined_cash_withdrawal",
+        "pending_cash_withdrawal",
+        "wrong_amount_of_cash_received",
+        "wrong_exchange_rate_for_cash_withdrawal"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "withdrawal_problems_4",
+      "group": "withdrawal_problems",
+      "query": "cash machine withdrawal issues",
+      "relevant_labels": [
+        "cash_withdrawal_charge",
+        "cash_withdrawal_not_recognised",
+        "declined_cash_withdrawal",
+        "pending_cash_withdrawal",
+        "wrong_amount_of_cash_received",
+        "wrong_exchange_rate_for_cash_withdrawal"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_problems_1",
+      "group": "transfer_problems",
+      "query": "problems sending money by transfer",
+      "relevant_labels": [
+        "declined_transfer",
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient",
+        "beneficiary_not_allowed"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_problems_2",
+      "group": "transfer_problems",
+      "query": "money transfers that have gone wrong",
+      "relevant_labels": [
+        "declined_transfer",
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient",
+        "beneficiary_not_allowed"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_problems_3",
+      "group": "transfer_problems",
+      "query": "trouble making transfers",
+      "relevant_labels": [
+        "declined_transfer",
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient",
+        "beneficiary_not_allowed"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_problems_4",
+      "group": "transfer_problems",
+      "query": "issues with transferring funds",
+      "relevant_labels": [
+        "declined_transfer",
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient",
+        "beneficiary_not_allowed"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "topup_problems_1",
+      "group": "topup_problems",
+      "query": "problems adding money to an account",
+      "relevant_labels": [
+        "top_up_failed",
+        "top_up_reverted",
+        "pending_top_up",
+        "balance_not_updated_after_bank_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "topup_problems_2",
+      "group": "topup_problems",
+      "query": "top ups that have not worked as expected",
+      "relevant_labels": [
+        "top_up_failed",
+        "top_up_reverted",
+        "pending_top_up",
+        "balance_not_updated_after_bank_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "topup_problems_3",
+      "group": "topup_problems",
+      "query": "trouble loading my balance",
+      "relevant_labels": [
+        "top_up_failed",
+        "top_up_reverted",
+        "pending_top_up",
+        "balance_not_updated_after_bank_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "topup_problems_4",
+      "group": "topup_problems",
+      "query": "issues funding my account",
+      "relevant_labels": [
+        "top_up_failed",
+        "top_up_reverted",
+        "pending_top_up",
+        "balance_not_updated_after_bank_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "payment_failed": 0.5,
+          "payment_missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unrecognized_transactions_1",
+      "group": "unrecognized_transactions",
+      "query": "transactions the customer does not recognize",
+      "relevant_labels": [
+        "card_payment_not_recognised",
+        "cash_withdrawal_not_recognised",
+        "direct_debit_payment_not_recognised"
+      ],
+      "requirements": {
+        "weights": {
+          "payment_unrecognized": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unrecognized_transactions_2",
+      "group": "unrecognized_transactions",
+      "query": "payments that were not authorized",
+      "relevant_labels": [
+        "card_payment_not_recognised",
+        "cash_withdrawal_not_recognised",
+        "direct_debit_payment_not_recognised"
+      ],
+      "requirements": {
+        "weights": {
+          "payment_unrecognized": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unrecognized_transactions_3",
+      "group": "unrecognized_transactions",
+      "query": "unfamiliar activity involving money",
+      "relevant_labels": [
+        "card_payment_not_recognised",
+        "cash_withdrawal_not_recognised",
+        "direct_debit_payment_not_recognised"
+      ],
+      "requirements": {
+        "weights": {
+          "payment_unrecognized": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unrecognized_transactions_4",
+      "group": "unrecognized_transactions",
+      "query": "money transactions I did not make",
+      "relevant_labels": [
+        "card_payment_not_recognised",
+        "cash_withdrawal_not_recognised",
+        "direct_debit_payment_not_recognised"
+      ],
+      "requirements": {
+        "weights": {
+          "payment_unrecognized": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pending_transactions_1",
+      "group": "pending_transactions",
+      "query": "transactions still pending",
+      "relevant_labels": [
+        "pending_card_payment",
+        "pending_cash_withdrawal",
+        "pending_top_up",
+        "pending_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "pending": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pending_transactions_2",
+      "group": "pending_transactions",
+      "query": "money operations waiting to complete",
+      "relevant_labels": [
+        "pending_card_payment",
+        "pending_cash_withdrawal",
+        "pending_top_up",
+        "pending_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "pending": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pending_transactions_3",
+      "group": "pending_transactions",
+      "query": "payments that are still processing",
+      "relevant_labels": [
+        "pending_card_payment",
+        "pending_cash_withdrawal",
+        "pending_top_up",
+        "pending_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "pending": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pending_transactions_4",
+      "group": "pending_transactions",
+      "query": "unfinished financial transactions",
+      "relevant_labels": [
+        "pending_card_payment",
+        "pending_cash_withdrawal",
+        "pending_top_up",
+        "pending_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "pending": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unexpected_fees_1",
+      "group": "unexpected_fees",
+      "query": "extra fees and charges",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "cash_withdrawal_charge",
+        "transfer_fee_charged",
+        "top_up_by_card_charge",
+        "top_up_by_bank_transfer_charge",
+        "exchange_charge",
+        "extra_charge_on_statement"
+      ],
+      "requirements": {
+        "weights": {
+          "charged_fee": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unexpected_fees_2",
+      "group": "unexpected_fees",
+      "query": "unexpected costs on financial transactions",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "cash_withdrawal_charge",
+        "transfer_fee_charged",
+        "top_up_by_card_charge",
+        "top_up_by_bank_transfer_charge",
+        "exchange_charge",
+        "extra_charge_on_statement"
+      ],
+      "requirements": {
+        "weights": {
+          "charged_fee": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unexpected_fees_3",
+      "group": "unexpected_fees",
+      "query": "questions about transaction surcharges",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "cash_withdrawal_charge",
+        "transfer_fee_charged",
+        "top_up_by_card_charge",
+        "top_up_by_bank_transfer_charge",
+        "exchange_charge",
+        "extra_charge_on_statement"
+      ],
+      "requirements": {
+        "weights": {
+          "charged_fee": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "unexpected_fees_4",
+      "group": "unexpected_fees",
+      "query": "additional charges for moving or spending money",
+      "relevant_labels": [
+        "card_payment_fee_charged",
+        "cash_withdrawal_charge",
+        "transfer_fee_charged",
+        "top_up_by_card_charge",
+        "top_up_by_bank_transfer_charge",
+        "exchange_charge",
+        "extra_charge_on_statement"
+      ],
+      "requirements": {
+        "weights": {
+          "charged_fee": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "exchange_problems_1",
+      "group": "exchange_problems",
+      "query": "foreign currency transactions with rate or fee problems",
+      "relevant_labels": [
+        "card_payment_wrong_exchange_rate",
+        "wrong_exchange_rate_for_cash_withdrawal",
+        "exchange_charge"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wrong_exchange_rate": 1,
+          "charged_fee": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "exchange_problems_2",
+      "group": "exchange_problems",
+      "query": "unexpected currency exchange rates or costs",
+      "relevant_labels": [
+        "card_payment_wrong_exchange_rate",
+        "wrong_exchange_rate_for_cash_withdrawal",
+        "exchange_charge"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wrong_exchange_rate": 1,
+          "charged_fee": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "exchange_problems_3",
+      "group": "exchange_problems",
+      "query": "problems with the rate or charge for converting money",
+      "relevant_labels": [
+        "card_payment_wrong_exchange_rate",
+        "wrong_exchange_rate_for_cash_withdrawal",
+        "exchange_charge"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wrong_exchange_rate": 1,
+          "charged_fee": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "exchange_problems_4",
+      "group": "exchange_problems",
+      "query": "incorrect foreign exchange rates and conversion charges",
+      "relevant_labels": [
+        "card_payment_wrong_exchange_rate",
+        "wrong_exchange_rate_for_cash_withdrawal",
+        "exchange_charge"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wrong_exchange_rate": 1,
+          "charged_fee": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_delivery_1",
+      "group": "card_delivery",
+      "query": "where is my new card",
+      "relevant_labels": [
+        "card_arrival",
+        "card_delivery_estimate"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_received": 1,
+          "wants_status": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_delivery_2",
+      "group": "card_delivery",
+      "query": "questions about card delivery time",
+      "relevant_labels": [
+        "card_arrival",
+        "card_delivery_estimate"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_received": 1,
+          "wants_status": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_delivery_3",
+      "group": "card_delivery",
+      "query": "waiting for a physical card to arrive",
+      "relevant_labels": [
+        "card_arrival",
+        "card_delivery_estimate"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_received": 1,
+          "wants_status": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_delivery_4",
+      "group": "card_delivery",
+      "query": "status of a card being delivered",
+      "relevant_labels": [
+        "card_arrival",
+        "card_delivery_estimate"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_received": 1,
+          "wants_status": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_not_working_1",
+      "group": "card_not_working",
+      "query": "cards that do not work",
+      "relevant_labels": [
+        "card_not_working",
+        "contactless_not_working",
+        "virtual_card_not_working"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_working": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_not_working_2",
+      "group": "card_not_working",
+      "query": "trouble using a broken card",
+      "relevant_labels": [
+        "card_not_working",
+        "contactless_not_working",
+        "virtual_card_not_working"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_working": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_not_working_3",
+      "group": "card_not_working",
+      "query": "nonworking physical or virtual cards",
+      "relevant_labels": [
+        "card_not_working",
+        "contactless_not_working",
+        "virtual_card_not_working"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_working": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_not_working_4",
+      "group": "card_not_working",
+      "query": "card functionality problems",
+      "relevant_labels": [
+        "card_not_working",
+        "contactless_not_working",
+        "virtual_card_not_working"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "card_not_working": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_amount_1",
+      "group": "cash_amount",
+      "query": "ATM gave the wrong amount of cash",
+      "relevant_labels": [
+        "wrong_amount_of_cash_received"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1,
+          "cash_not_received": 1,
+          "incorrect": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_amount_2",
+      "group": "cash_amount",
+      "query": "received less cash than requested from a machine",
+      "relevant_labels": [
+        "wrong_amount_of_cash_received"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1,
+          "cash_not_received": 1,
+          "incorrect": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_amount_3",
+      "group": "cash_amount",
+      "query": "incorrect cash amount after a withdrawal",
+      "relevant_labels": [
+        "wrong_amount_of_cash_received"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1,
+          "cash_not_received": 1,
+          "incorrect": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_amount_4",
+      "group": "cash_amount",
+      "query": "cash machine dispensed the wrong sum",
+      "relevant_labels": [
+        "wrong_amount_of_cash_received"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash_withdrawal": 1,
+          "cash_not_received": 1,
+          "incorrect": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "refunds_1",
+      "group": "refunds",
+      "query": "getting money back after a payment",
+      "relevant_labels": [
+        "request_refund",
+        "Refund_not_showing_up"
+      ],
+      "requirements": {
+        "weights": {
+          "wants_refund": 1,
+          "payment_missing": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "refunds_2",
+      "group": "refunds",
+      "query": "refund requests and missing refunds",
+      "relevant_labels": [
+        "request_refund",
+        "Refund_not_showing_up"
+      ],
+      "requirements": {
+        "weights": {
+          "wants_refund": 1,
+          "payment_missing": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "refunds_3",
+      "group": "refunds",
+      "query": "questions about receiving a refund",
+      "relevant_labels": [
+        "request_refund",
+        "Refund_not_showing_up"
+      ],
+      "requirements": {
+        "weights": {
+          "wants_refund": 1,
+          "payment_missing": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "refunds_4",
+      "group": "refunds",
+      "query": "recovering money paid for a purchase",
+      "relevant_labels": [
+        "request_refund",
+        "Refund_not_showing_up"
+      ],
+      "requirements": {
+        "weights": {
+          "wants_refund": 1,
+          "payment_missing": 0.3
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cancel_transfers_1",
+      "group": "cancel_transfers",
+      "query": "transfers the customer wants to cancel",
+      "relevant_labels": [
+        "cancel_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_cancel": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cancel_transfers_2",
+      "group": "cancel_transfers",
+      "query": "stop a money transfer",
+      "relevant_labels": [
+        "cancel_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_cancel": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cancel_transfers_3",
+      "group": "cancel_transfers",
+      "query": "cancel sending money",
+      "relevant_labels": [
+        "cancel_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_cancel": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cancel_transfers_4",
+      "group": "cancel_transfers",
+      "query": "undo a transfer request",
+      "relevant_labels": [
+        "cancel_transfer"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_cancel": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_security_1",
+      "group": "card_security",
+      "query": "cards that are lost stolen or compromised",
+      "relevant_labels": [
+        "lost_or_stolen_card",
+        "compromised_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "security_concern": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_security_2",
+      "group": "card_security",
+      "query": "security problems affecting a payment card",
+      "relevant_labels": [
+        "lost_or_stolen_card",
+        "compromised_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "security_concern": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_security_3",
+      "group": "card_security",
+      "query": "a missing card or suspected card fraud",
+      "relevant_labels": [
+        "lost_or_stolen_card",
+        "compromised_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "security_concern": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "card_security_4",
+      "group": "card_security",
+      "query": "protecting a card after theft or unauthorized use",
+      "relevant_labels": [
+        "lost_or_stolen_card",
+        "compromised_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "security_concern": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "activation_1",
+      "group": "activation",
+      "query": "activate a payment card",
+      "relevant_labels": [
+        "activate_my_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_activate": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "activation_2",
+      "group": "activation",
+      "query": "start using a new card",
+      "relevant_labels": [
+        "activate_my_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_activate": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "activation_3",
+      "group": "activation",
+      "query": "enable my card for use",
+      "relevant_labels": [
+        "activate_my_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_activate": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "activation_4",
+      "group": "activation",
+      "query": "card activation instructions",
+      "relevant_labels": [
+        "activate_my_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_activate": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "account_changes_1",
+      "group": "account_changes",
+      "query": "changing personal account details or closing the account",
+      "relevant_labels": [
+        "edit_personal_details",
+        "terminate_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "wants_change": 0.7,
+          "wants_cancel": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "account_changes_2",
+      "group": "account_changes",
+      "query": "update or terminate my account",
+      "relevant_labels": [
+        "edit_personal_details",
+        "terminate_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "wants_change": 0.7,
+          "wants_cancel": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "account_changes_3",
+      "group": "account_changes",
+      "query": "manage account information and closure",
+      "relevant_labels": [
+        "edit_personal_details",
+        "terminate_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "wants_change": 0.7,
+          "wants_cancel": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "account_changes_4",
+      "group": "account_changes",
+      "query": "account profile changes and account cancellation",
+      "relevant_labels": [
+        "edit_personal_details",
+        "terminate_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "wants_change": 0.7,
+          "wants_cancel": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "identity_1",
+      "group": "identity",
+      "query": "identity and source of funds checks",
+      "relevant_labels": [
+        "verify_my_identity",
+        "why_verify_identity",
+        "unable_to_verify_identity",
+        "verify_source_of_funds"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_identity_verification": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "identity_2",
+      "group": "identity",
+      "query": "questions about proving who I am",
+      "relevant_labels": [
+        "verify_my_identity",
+        "why_verify_identity",
+        "unable_to_verify_identity",
+        "verify_source_of_funds"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_identity_verification": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "identity_3",
+      "group": "identity",
+      "query": "verification documents and identity checks",
+      "relevant_labels": [
+        "verify_my_identity",
+        "why_verify_identity",
+        "unable_to_verify_identity",
+        "verify_source_of_funds"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_identity_verification": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "identity_4",
+      "group": "identity",
+      "query": "requirements and problems with customer verification",
+      "relevant_labels": [
+        "verify_my_identity",
+        "why_verify_identity",
+        "unable_to_verify_identity",
+        "verify_source_of_funds"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_identity_verification": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "funding_methods_1",
+      "group": "funding_methods",
+      "query": "ways to add money to an account",
+      "relevant_labels": [
+        "topping_up_by_card",
+        "top_up_by_cash_or_cheque",
+        "transfer_into_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "funding_methods_2",
+      "group": "funding_methods",
+      "query": "how can I fund my balance",
+      "relevant_labels": [
+        "topping_up_by_card",
+        "top_up_by_cash_or_cheque",
+        "transfer_into_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "funding_methods_3",
+      "group": "funding_methods",
+      "query": "methods for loading money",
+      "relevant_labels": [
+        "topping_up_by_card",
+        "top_up_by_cash_or_cheque",
+        "transfer_into_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "funding_methods_4",
+      "group": "funding_methods",
+      "query": "putting money into my account",
+      "relevant_labels": [
+        "topping_up_by_card",
+        "top_up_by_cash_or_cheque",
+        "transfer_into_account"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_topup": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "new_cards_1",
+      "group": "new_cards",
+      "query": "getting a new physical or virtual card",
+      "relevant_labels": [
+        "get_physical_card",
+        "order_physical_card",
+        "getting_spare_card",
+        "getting_virtual_card",
+        "get_disposable_virtual_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "new_cards_2",
+      "group": "new_cards",
+      "query": "how to obtain another payment card",
+      "relevant_labels": [
+        "get_physical_card",
+        "order_physical_card",
+        "getting_spare_card",
+        "getting_virtual_card",
+        "get_disposable_virtual_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "new_cards_3",
+      "group": "new_cards",
+      "query": "ordering cards for future use",
+      "relevant_labels": [
+        "get_physical_card",
+        "order_physical_card",
+        "getting_spare_card",
+        "getting_virtual_card",
+        "get_disposable_virtual_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "new_cards_4",
+      "group": "new_cards",
+      "query": "request a new card or spare card",
+      "relevant_labels": [
+        "get_physical_card",
+        "order_physical_card",
+        "getting_spare_card",
+        "getting_virtual_card",
+        "get_disposable_virtual_card"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 1,
+          "wants_information": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "credentials_1",
+      "group": "credentials",
+      "query": "problems with PINs and passcodes",
+      "relevant_labels": [
+        "passcode_forgotten",
+        "pin_blocked",
+        "change_pin"
+      ],
+      "requirements": {
+        "weights": {
+          "credential_problem": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "credentials_2",
+      "group": "credentials",
+      "query": "forgotten blocked or changed access codes",
+      "relevant_labels": [
+        "passcode_forgotten",
+        "pin_blocked",
+        "change_pin"
+      ],
+      "requirements": {
+        "weights": {
+          "credential_problem": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "credentials_3",
+      "group": "credentials",
+      "query": "help with secret codes for cards and accounts",
+      "relevant_labels": [
+        "passcode_forgotten",
+        "pin_blocked",
+        "change_pin"
+      ],
+      "requirements": {
+        "weights": {
+          "credential_problem": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "credentials_4",
+      "group": "credentials",
+      "query": "trouble with my login code or card PIN",
+      "relevant_labels": [
+        "passcode_forgotten",
+        "pin_blocked",
+        "change_pin"
+      ],
+      "requirements": {
+        "weights": {
+          "credential_problem": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pin_changes_1",
+      "group": "pin_changes",
+      "query": "change or unblock a card PIN",
+      "relevant_labels": [
+        "change_pin",
+        "pin_blocked"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 0.5,
+          "credential_problem": 1,
+          "wants_change": 0.7
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pin_changes_2",
+      "group": "pin_changes",
+      "query": "help resetting a PIN code",
+      "relevant_labels": [
+        "change_pin",
+        "pin_blocked"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 0.5,
+          "credential_problem": 1,
+          "wants_change": 0.7
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pin_changes_3",
+      "group": "pin_changes",
+      "query": "modify a card PIN or recover it after blocking",
+      "relevant_labels": [
+        "change_pin",
+        "pin_blocked"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 0.5,
+          "credential_problem": 1,
+          "wants_change": 0.7
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "pin_changes_4",
+      "group": "pin_changes",
+      "query": "card PIN changes and blocked PINs",
+      "relevant_labels": [
+        "change_pin",
+        "pin_blocked"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_card": 0.5,
+          "credential_problem": 1,
+          "wants_change": 0.7
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "currency_information_1",
+      "group": "currency_information",
+      "query": "how currency exchange works",
+      "relevant_labels": [
+        "exchange_rate",
+        "exchange_via_app",
+        "fiat_currency_support"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "currency_information_2",
+      "group": "currency_information",
+      "query": "available currencies and exchange rates",
+      "relevant_labels": [
+        "exchange_rate",
+        "exchange_via_app",
+        "fiat_currency_support"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "currency_information_3",
+      "group": "currency_information",
+      "query": "questions about converting money in the app",
+      "relevant_labels": [
+        "exchange_rate",
+        "exchange_via_app",
+        "fiat_currency_support"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "currency_information_4",
+      "group": "currency_information",
+      "query": "information on foreign currency conversion",
+      "relevant_labels": [
+        "exchange_rate",
+        "exchange_via_app",
+        "fiat_currency_support"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_currency_exchange": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_deposit_1",
+      "group": "cash_deposit",
+      "query": "cash or cheque deposits into an account",
+      "relevant_labels": [
+        "top_up_by_cash_or_cheque",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash": 1,
+          "is_about_topup": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_deposit_2",
+      "group": "cash_deposit",
+      "query": "adding physical money or a cheque to my balance",
+      "relevant_labels": [
+        "top_up_by_cash_or_cheque",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash": 1,
+          "is_about_topup": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_deposit_3",
+      "group": "cash_deposit",
+      "query": "questions about funding an account with cash",
+      "relevant_labels": [
+        "top_up_by_cash_or_cheque",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash": 1,
+          "is_about_topup": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "cash_deposit_4",
+      "group": "cash_deposit",
+      "query": "depositing cash and seeing it in the balance",
+      "relevant_labels": [
+        "top_up_by_cash_or_cheque",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_cash": 1,
+          "is_about_topup": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "missing_balance_1",
+      "group": "missing_balance",
+      "query": "account balance not updated after adding money",
+      "relevant_labels": [
+        "balance_not_updated_after_bank_transfer",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "payment_missing": 1,
+          "missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "missing_balance_2",
+      "group": "missing_balance",
+      "query": "money deposited but balance has not changed",
+      "relevant_labels": [
+        "balance_not_updated_after_bank_transfer",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "payment_missing": 1,
+          "missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "missing_balance_3",
+      "group": "missing_balance",
+      "query": "funds added to an account are not showing",
+      "relevant_labels": [
+        "balance_not_updated_after_bank_transfer",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "payment_missing": 1,
+          "missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "missing_balance_4",
+      "group": "missing_balance",
+      "query": "missing credit after depositing or transferring money",
+      "relevant_labels": [
+        "balance_not_updated_after_bank_transfer",
+        "balance_not_updated_after_cheque_or_cash_deposit"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_account": 1,
+          "payment_missing": 1,
+          "missing": 0.5
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_information_1",
+      "group": "transfer_information",
+      "query": "how to receive transfers and how long they take",
+      "relevant_labels": [
+        "receiving_money",
+        "transfer_into_account",
+        "transfer_timing"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_information_2",
+      "group": "transfer_information",
+      "query": "information about incoming bank transfers",
+      "relevant_labels": [
+        "receiving_money",
+        "transfer_into_account",
+        "transfer_timing"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_information_3",
+      "group": "transfer_information",
+      "query": "receiving money into an account and transfer timing",
+      "relevant_labels": [
+        "receiving_money",
+        "transfer_into_account",
+        "transfer_timing"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    },
+    {
+      "id": "transfer_information_4",
+      "group": "transfer_information",
+      "query": "questions about transfers arriving in an account",
+      "relevant_labels": [
+        "receiving_money",
+        "transfer_into_account",
+        "transfer_timing"
+      ],
+      "requirements": {
+        "weights": {
+          "is_about_transfer": 1,
+          "wants_information": 1
+        },
+        "filters": []
+      }
+    }
+  ],
+  "control_cases": [
+    {
+      "id": "withdrawals_no_declines",
+      "query": "cash withdrawal problems, exclude declined withdrawals",
+      "weights": {
+        "is_about_cash_withdrawal": 1
+      },
+      "negative": "declined",
+      "desired": [
+        "cash_withdrawal_charge",
+        "cash_withdrawal_not_recognised",
+        "pending_cash_withdrawal",
+        "wrong_amount_of_cash_received",
+        "wrong_exchange_rate_for_cash_withdrawal"
+      ],
+      "unwanted": [
+        "declined_cash_withdrawal"
+      ]
+    },
+    {
+      "id": "card_no_pending",
+      "query": "unrecognized card transactions, not pending transactions",
+      "weights": {
+        "is_about_card": 1,
+        "payment_unrecognized": 1
+      },
+      "negative": "pending",
+      "desired": [
+        "card_payment_not_recognised"
+      ],
+      "unwanted": [
+        "pending_card_payment"
+      ]
+    },
+    {
+      "id": "transfers_no_fees",
+      "query": "transfer problems without fee questions",
+      "weights": {
+        "is_about_transfer": 1
+      },
+      "negative": "charged_fee",
+      "desired": [
+        "declined_transfer",
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient"
+      ],
+      "unwanted": [
+        "transfer_fee_charged",
+        "top_up_by_bank_transfer_charge"
+      ]
+    },
+    {
+      "id": "topups_no_pending",
+      "query": "failed top ups, exclude pending top ups",
+      "weights": {
+        "is_about_topup": 1,
+        "payment_failed": 1
+      },
+      "negative": "pending",
+      "desired": [
+        "top_up_failed",
+        "top_up_reverted"
+      ],
+      "unwanted": [
+        "pending_top_up"
+      ]
+    },
+    {
+      "id": "unrecognized_no_cash",
+      "query": "unrecognized payments except cash withdrawals",
+      "weights": {
+        "payment_unrecognized": 1
+      },
+      "negative": "is_about_cash_withdrawal",
+      "desired": [
+        "card_payment_not_recognised",
+        "direct_debit_payment_not_recognised"
+      ],
+      "unwanted": [
+        "cash_withdrawal_not_recognised"
+      ]
+    },
+    {
+      "id": "cards_no_delivery",
+      "query": "card problems excluding cards not received",
+      "weights": {
+        "is_about_card": 1,
+        "card_not_working": 0.5
+      },
+      "negative": "card_not_received",
+      "desired": [
+        "card_not_working",
+        "contactless_not_working",
+        "virtual_card_not_working"
+      ],
+      "unwanted": [
+        "card_arrival",
+        "card_delivery_estimate"
+      ]
+    },
+    {
+      "id": "transfers_no_declines",
+      "query": "transfer issues other than declines",
+      "weights": {
+        "is_about_transfer": 1
+      },
+      "negative": "declined",
+      "desired": [
+        "failed_transfer",
+        "pending_transfer",
+        "transfer_not_received_by_recipient"
+      ],
+      "unwanted": [
+        "declined_transfer"
+      ]
+    },
+    {
+      "id": "fees_no_cards",
+      "query": "transaction fees excluding card transactions",
+      "weights": {
+        "charged_fee": 1
+      },
+      "negative": "is_about_card",
+      "desired": [
+        "transfer_fee_charged",
+        "cash_withdrawal_charge",
+        "exchange_charge"
+      ],
+      "unwanted": [
+        "card_payment_fee_charged",
+        "top_up_by_card_charge"
+      ]
+    }
+  ]
+}

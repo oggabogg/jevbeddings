@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>jevbeddings · Inspectable search</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+  <header><a href="/" class="brand"><span class="mark">j.</span> jevbeddings <span class="brand-note">RETRIEVAL LAB</span></a><span id="connection" class="status">Connecting…</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">EXPLICIT FEATURES. VISIBLE REASONING.</p><h1>Search you can<br><em>see through.</em></h1><p class="lede">Ask for the properties that matter. Inspect every weight,<br class="desktop"> every score, and every reason a document matched.</p></div><div class="system-card"><span class="eyebrow">THE ENTIRE PIPELINE</span><div>Documents <span>→</span> JEV questions</div><div>Named features <span>→</span> Weighted ranking</div><p>No embeddings. No hidden reranker.</p></div></section>
+    <div id="mode-banner" class="banner" hidden></div>
+    <section class="workspace">
+      <div class="main-column">
+        <form id="search-form" class="search-box"><label for="query">What are you looking for?</label><div class="search-row"><input id="query" placeholder="Urgent billing problems from enterprise customers" value="urgent billing problems from enterprise customers, exclude newsletters" maxlength="4000"><button type="submit" id="search-button">Search <span>↗</span></button></div><div class="search-options"><label><input id="allow-partial" type="checkbox"> Allow partial search when interpretation needs review</label><span>JEV only · deterministic ranking</span></div></form>
+        <details class="advanced"><summary>Control the feature requirements directly</summary><p>Use weights from −1 to 1 and explicit constraints. This runs only the scoring code.</p><label for="requirements">Feature requirements (JSON)</label><textarea id="requirements" rows="7" spellcheck="false">{"weights":{"about_billing":1,"urgent":0.8,"enterprise":0.9,"is_customer":1},"filters":[{"feature":"is_newsletter","operator":"<=","value":0.2}]}</textarea><button id="run-explicit" type="button" class="secondary">Rank with these requirements</button></details>
+        <div id="message" role="status" aria-live="polite"></div>
+        <div class="section-line"><h2>Results <span id="result-count">—</span></h2><span id="latency" class="muted">Every contribution accounted for</span></div>
+        <div id="results"><div class="empty"><span class="empty-symbol">≡</span><h3>A clear reason for every result</h3><p>Run a search to see documents ranked by<br>the semantic properties you ask for.</p></div></div>
+        <section class="collection"><div class="section-line"><h2>Document collection</h2><button id="refresh-docs" class="text-button">Refresh</button></div><div id="document-list"></div><details id="add-document"><summary>Add a document</summary><form id="document-form"><label for="doc-title">Title</label><input id="doc-title" required maxlength="500"><label for="doc-body">Document text</label><textarea id="doc-body" required rows="5" maxlength="60000"></textarea><button type="submit" class="secondary">Save and index with JEV</button></form></details><button id="index-all" class="secondary">Index missing features</button></section>
+      </div>
+      <aside><div class="panel"><div class="section-line"><h2>Query interpretation</h2><span class="pill">INSPECT</span></div><p id="interpretation-note" class="muted">The document has a property.<br>The query assigns its importance.</p><div id="interpretation"><p class="small muted">Your active weights and hard filters will appear here.</p></div></div><div class="panel schema-panel"><div class="section-line"><h2>Feature schema</h2><span id="schema-version" class="pill">v1</span></div><p class="small muted" id="schema-note"></p><div id="feature-list"></div></div><div class="formula"><span class="eyebrow">RELEVANCE, EXPLAINED</span><p>Σ positive contributions − Σ penalties</p><hr><p>Σ positive query weights × global weights</p><small>Feature magnitudes stay intact. Missing values remain unknown.</small></div></aside>
+    </section>
+  </main>
+  <footer><span>jevbeddings / 01</span><span>Built around questions you can inspect.</span></footer>
+  <dialog id="document-dialog"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close-dialog" class="secondary" aria-label="Close document">Close</button></div><p id="dialog-meta" class="muted"></p><pre id="dialog-body"></pre><h3>Full feature vector</h3><div id="dialog-features"></div></dialog>
+</body></html>

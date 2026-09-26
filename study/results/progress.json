@@ -1,0 +1,17 @@
+{
+  "state": "extraction_complete",
+  "pid": 54220,
+  "updated_at": "2026-09-26T17:17:23.707Z",
+  "counts": {
+    "test": 3080,
+    "train": 10003
+  },
+  "interpreted_queries": 100,
+  "total_document_target": 13083,
+  "total_query_target": 100,
+  "completed_this_session": 13183,
+  "elapsed_session_seconds": 884.523,
+  "estimated_cost_usd": 2.0685841679998958,
+  "estimated_cost_ceiling_usd": 5,
+  "schema_sha256": "70781bf302e4d5b4521d38778de2910b352f547fccd8130d37600b299b70aa88"
+}

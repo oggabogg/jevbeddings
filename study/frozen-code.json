@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-26T17:13:51.165Z",
+  "test_vectors_at_freeze": 0,
+  "files": {
+    "study/run.js": "177d54255b0f61db2d051982d24e549d6aaf332db29f0389b90ae4d821f07300",
+    "study/data.js": "ea20b7f67687d2827104ac945893dbfc41a32ebd401db9be61a3f94455bb8fd2",
+    "study/math.js": "e7bb9d289a6d79d0fbafd25826865d3520e95745fefa03c4ac027b068058854c",
+    "study/evaluate.js": "84957549de7c0fa1aa601271c1bd18e181a6848d8501428032bdab325eaedc9d",
+    "study/AMENDMENTS.md": "4e670ddb6609d2d468556d73e5c0cfb86324842a896f544f801bb4ec8071fff0",
+    "src/jev.js": "e11135b22e73af3920eb69bdbdaec8f1771f81c6d5bf15e7bb674f9371ecedc1",
+    "src/query.js": "fb13e3c5f983da1dc85fea1a688cee2e35ec1f71ef73488bdb616b95bf31f0c0"
+  }
+}

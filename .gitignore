@@ -1,0 +1,24 @@
+# Credentials and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+# Local outputs and working copies
+/data/*
+!/data/banking77/
+/data/banking77/*
+!/data/banking77/categories.json
+!/data/banking77/LICENSE
+!/data/banking77/manifest.json
+!/data/banking77/study.sqlite
+!/data/banking77/train.csv
+!/data/banking77/test.csv
+reports/
+node_modules/
+*.log
+*-wal
+*-shm
+study/results/progress.tmp
+run.lock

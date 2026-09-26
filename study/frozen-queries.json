@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-26T17:00:28.694Z",
+  "queries_sha256": "52a3a02efc8fea59f3e86142b8978b1d28df9355047021d4439ff11f3da89999",
+  "interpreter_sha256": "fb13e3c5f983da1dc85fea1a688cee2e35ec1f71ef73488bdb616b95bf31f0c0",
+  "groups": 25,
+  "queries": 100,
+  "control_cases": 8,
+  "test_data_seen": false
+}

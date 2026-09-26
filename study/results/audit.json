@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-09-26T17:18:16.201Z",
+  "passed": true,
+  "vector_rows_verified": 13083,
+  "full_sort_reference_queries": 31,
+  "ranking_comparisons": 124,
+  "checked_methods": [
+    "bm25",
+    "cosine",
+    "dot",
+    "weighted"
+  ],
+  "checks": [
+    "Every row matches its official text fingerprint",
+    "Every saved score equals its typed JEV answer",
+    "Pinned response model identities",
+    "Independent full-sort top-10 and exact first-relevant ranks",
+    "No numeric control violations",
+    "Complete experiment counts"
+  ]
+}

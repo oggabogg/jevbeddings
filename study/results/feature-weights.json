@@ -1,0 +1,308 @@
+[
+  {
+    "feature": "is_about_card",
+    "family": "entity",
+    "df": 4102,
+    "threshold": 0.5,
+    "global_weight": 0.8912665995553235,
+    "mean_value": 0.44429971008696856,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_cash",
+    "family": "entity",
+    "df": 1153,
+    "threshold": 0.5,
+    "global_weight": 2.159750844929465,
+    "mean_value": 0.14739578126560862,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_transfer",
+    "family": "entity",
+    "df": 1768,
+    "threshold": 0.5,
+    "global_weight": 1.7325705978377244,
+    "mean_value": 0.23545436369089087,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_bank_transfer",
+    "family": "entity",
+    "df": 1422,
+    "threshold": 0.5,
+    "global_weight": 1.9502176939076574,
+    "mean_value": 0.15508147555732232,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_direct_debit",
+    "family": "entity",
+    "df": 108,
+    "threshold": 0.5,
+    "global_weight": 4.519392409768366,
+    "mean_value": 0.0535909227231788,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_account",
+    "family": "entity",
+    "df": 1624,
+    "threshold": 0.5,
+    "global_weight": 1.8174771972336718,
+    "mean_value": 0.23688993302008654,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_cash_withdrawal",
+    "family": "entity",
+    "df": 782,
+    "threshold": 0.5,
+    "global_weight": 2.5476075960067064,
+    "mean_value": 0.09281915425371395,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_topup",
+    "family": "entity",
+    "df": 1706,
+    "threshold": 0.5,
+    "global_weight": 1.768247569203069,
+    "mean_value": 0.19865340397879824,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_identity_verification",
+    "family": "entity",
+    "df": 403,
+    "threshold": 0.5,
+    "global_weight": 3.2093254140363596,
+    "mean_value": 0.07134059782064447,
+    "zero_count": 0
+  },
+  {
+    "feature": "is_about_currency_exchange",
+    "family": "entity",
+    "df": 956,
+    "threshold": 0.5,
+    "global_weight": 2.3469369005445553,
+    "mean_value": 0.1180195941217469,
+    "zero_count": 0
+  },
+  {
+    "feature": "payment_failed",
+    "family": "event",
+    "df": 1558,
+    "threshold": 0.5,
+    "global_weight": 1.858940422939733,
+    "mean_value": 0.19716285114464605,
+    "zero_count": 0
+  },
+  {
+    "feature": "payment_missing",
+    "family": "event",
+    "df": 2891,
+    "threshold": 0.5,
+    "global_weight": 1.2410367087188545,
+    "mean_value": 0.35128861341597417,
+    "zero_count": 0
+  },
+  {
+    "feature": "payment_unrecognized",
+    "family": "event",
+    "df": 750,
+    "threshold": 0.5,
+    "global_weight": 2.589334640233375,
+    "mean_value": 0.1269829051284505,
+    "zero_count": 0
+  },
+  {
+    "feature": "charged_fee",
+    "family": "event",
+    "df": 1342,
+    "threshold": 0.5,
+    "global_weight": 2.008079095474272,
+    "mean_value": 0.15701189643106045,
+    "zero_count": 0
+  },
+  {
+    "feature": "wrong_exchange_rate",
+    "family": "event",
+    "df": 274,
+    "threshold": 0.5,
+    "global_weight": 3.5939691943309384,
+    "mean_value": 0.043326002199335516,
+    "zero_count": 0
+  },
+  {
+    "feature": "duplicate_transaction",
+    "family": "event",
+    "df": 182,
+    "threshold": 0.5,
+    "global_weight": 4.001254139156089,
+    "mean_value": 0.036898930320899546,
+    "zero_count": 0
+  },
+  {
+    "feature": "cash_not_received",
+    "family": "event",
+    "df": 272,
+    "threshold": 0.5,
+    "global_weight": 3.60126849681255,
+    "mean_value": 0.04278316505047899,
+    "zero_count": 0
+  },
+  {
+    "feature": "transaction_reversed",
+    "family": "event",
+    "df": 244,
+    "threshold": 0.5,
+    "global_weight": 3.7094820814527827,
+    "mean_value": 0.05152954113765415,
+    "zero_count": 0
+  },
+  {
+    "feature": "card_not_received",
+    "family": "event",
+    "df": 275,
+    "threshold": 0.5,
+    "global_weight": 3.5903394262803596,
+    "mean_value": 0.04858042587222868,
+    "zero_count": 0
+  },
+  {
+    "feature": "card_not_working",
+    "family": "event",
+    "df": 430,
+    "threshold": 0.5,
+    "global_weight": 3.144632201893762,
+    "mean_value": 0.07658202539237079,
+    "zero_count": 0
+  },
+  {
+    "feature": "credential_problem",
+    "family": "event",
+    "df": 376,
+    "threshold": 0.5,
+    "global_weight": 3.2784951045494988,
+    "mean_value": 0.05531940417873957,
+    "zero_count": 0
+  },
+  {
+    "feature": "security_concern",
+    "family": "event",
+    "df": 726,
+    "threshold": 0.5,
+    "global_weight": 2.6218138144639904,
+    "mean_value": 0.09574827551733595,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_cancel",
+    "family": "user_intent",
+    "df": 477,
+    "threshold": 0.5,
+    "global_weight": 3.0411295595060537,
+    "mean_value": 0.08005898230529825,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_refund",
+    "family": "user_intent",
+    "df": 1362,
+    "threshold": 0.5,
+    "global_weight": 1.993296860300977,
+    "mean_value": 0.16336898930319893,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_information",
+    "family": "user_intent",
+    "df": 6545,
+    "threshold": 0.5,
+    "global_weight": 0.4241308369363838,
+    "mean_value": 0.6416774967509538,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_status",
+    "family": "user_intent",
+    "df": 2908,
+    "threshold": 0.5,
+    "global_weight": 1.235175633502308,
+    "mean_value": 0.3372788163550974,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_activate",
+    "family": "user_intent",
+    "df": 825,
+    "threshold": 0.5,
+    "global_weight": 2.4941455184765315,
+    "mean_value": 0.146495051484546,
+    "zero_count": 0
+  },
+  {
+    "feature": "wants_change",
+    "family": "user_intent",
+    "df": 893,
+    "threshold": 0.5,
+    "global_weight": 2.4150345168239955,
+    "mean_value": 0.14847945616313754,
+    "zero_count": 0
+  },
+  {
+    "feature": "pending",
+    "family": "state",
+    "df": 4072,
+    "threshold": 0.5,
+    "global_weight": 0.898605184349097,
+    "mean_value": 0.4381975407377773,
+    "zero_count": 0
+  },
+  {
+    "feature": "declined",
+    "family": "state",
+    "df": 803,
+    "threshold": 0.5,
+    "global_weight": 2.5211410228185436,
+    "mean_value": 0.11007297810655954,
+    "zero_count": 0
+  },
+  {
+    "feature": "missing",
+    "family": "state",
+    "df": 3816,
+    "threshold": 0.5,
+    "global_weight": 0.9635202392522799,
+    "mean_value": 0.40909627111866537,
+    "zero_count": 0
+  },
+  {
+    "feature": "incorrect",
+    "family": "state",
+    "df": 3614,
+    "threshold": 0.5,
+    "global_weight": 1.0178931574046446,
+    "mean_value": 0.3396151154653636,
+    "zero_count": 0
+  },
+  {
+    "feature": "unrecognized",
+    "family": "state",
+    "df": 900,
+    "threshold": 0.5,
+    "global_weight": 2.407235034389172,
+    "mean_value": 0.15084974507646515,
+    "zero_count": 0
+  },
+  {
+    "feature": "expired",
+    "family": "state",
+    "df": 94,
+    "threshold": 0.5,
+    "global_weight": 4.6568634003969684,
+    "mean_value": 0.028322503249025213,
+    "zero_count": 0
+  }
+]

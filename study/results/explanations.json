@@ -1,0 +1,5702 @@
+[
+  {
+    "test_row": 0,
+    "query": "How do I locate my card?",
+    "expected_label": "card_arrival",
+    "document_row": 1497,
+    "document": "I thought I left my card at a restaurant, but they claim not to have it and now I don't have any idea where it is. I'm so worried that someone might be using it fraudulently. Is there any way to look into this?",
+    "retrieved_label": "lost_or_stolen_card",
+    "correct": false,
+    "relevance_score": 0.7517075948053209,
+    "denominator": 9.64144313800273,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.91,
+        "document_value": 0.9,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 2.9404879901236147
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.41,
+        "document_value": 0.97,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 1.042695354012329
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.96,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8470597762173794
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.87,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.8214973559864939
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.82,
+        "document_value": 0.7,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.7089908136303248
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.87,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.35423407500926773
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.44,
+        "document_value": 0.87,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.3439860645688343
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.05,
+        "document_value": 0.39,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.046941083170588864
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.05,
+        "document_value": 0.24,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.03773558642272514
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.04,
+        "document_value": 0.25,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.024150345168239957
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.07,
+        "document_value": 0.11,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.013994574418699276
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.18,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.013982407057260223
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.37,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.011298614047191553
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.18,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.010948066414221793
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.07,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.004493055579650904
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.07,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.004185923406632052
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.002711635445861019
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.05,
+        "document_value": 0.02,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.002494145518476532
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.001512684613691126
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.0014892440504626252
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0014871523383517865
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0012958505069576788
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0003536495138406138
+      }
+    ]
+  },
+  {
+    "test_row": 5,
+    "query": "When will I get my card?",
+    "expected_label": "card_arrival",
+    "document_row": 1044,
+    "document": "I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it?",
+    "retrieved_label": "card_delivery_estimate",
+    "correct": false,
+    "relevance_score": 0.758407598012548,
+    "denominator": 8.963895554250886,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.8,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 2.843548825614045
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.97,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.174157957207294
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.97,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8558833155529771
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.78,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.6728755620406038
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.67,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.6326473890930471
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.23,
+        "document_value": 0.45,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.258144061162321
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.69,
+        "document_value": 0.83,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.24289973031346695
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.2,
+        "document_value": 0.24,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.059569762018505015
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.13,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.016539042494826416
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.36,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.01099324609997016
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.04,
+        "document_value": 0.05,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.004830069033647991
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.05,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.004716948302840643
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0025917010139153577
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0012164518238024216
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0011153642537638398
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0009628940137556689
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0005243627628927981
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.00037094820814527826
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 9,
+    "query": "Is it normal to have to wait over a week for my new card?",
+    "expected_label": "card_arrival",
+    "document_row": 1044,
+    "document": "I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it?",
+    "retrieved_label": "card_delivery_estimate",
+    "correct": false,
+    "relevance_score": 0.7021141899842794,
+    "denominator": 11.085705646684259,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.89,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.163448068495625
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.9,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.0894249087490357
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8735303942241726
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.95,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8195279281263764
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.81,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.7648423659184599
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.43,
+        "document_value": 0.45,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.48261715782520886
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.89,
+        "document_value": 0.83,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.3133054492449067
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.4,
+        "document_value": 0.36,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.1465766146662688
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.18,
+        "document_value": 0.24,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.05361278581665451
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.21,
+        "document_value": 0.05,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.025357862426651955
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.12,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.015266808456762846
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.05,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.012578528807575047
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0015730882886783942
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.001444341020633503
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0012164518238024216
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.00037094820814527826
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 13,
+    "query": "still waiting on my new card",
+    "expected_label": "card_arrival",
+    "document_row": 1044,
+    "document": "I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it?",
+    "retrieved_label": "card_delivery_estimate",
+    "correct": false,
+    "relevance_score": 0.7068746233469585,
+    "denominator": 11.14961090213825,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.97,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.447802951057029
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.1620532359989715
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.97,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9159223394332173
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8647068548885748
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8454077574356305
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.31,
+        "document_value": 0.45,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.3479332998274762
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.28,
+        "document_value": 0.36,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.10260363026638818
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.27,
+        "document_value": 0.24,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.08041917872498176
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.09,
+        "document_value": 0.83,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.03168257351914787
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.24,
+        "document_value": 0.05,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.028980414201887947
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.13,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.016539042494826416
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.05,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.012578528807575047
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.04,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0020974510515711924
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.001444341020633503
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0012164518238024216
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 22,
+    "query": "How long should my new card take to arrive?",
+    "expected_label": "card_arrival",
+    "document_row": 1044,
+    "document": "I ordered my card and it isn't here yet. I need it ASAP. When can I expect to get it?",
+    "retrieved_label": "card_delivery_estimate",
+    "correct": false,
+    "relevance_score": 0.747078591525685,
+    "denominator": 8.10169481377518,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.65,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 2.3103834208114113
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.97,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.174157957207294
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8735303942241726
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.81,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.6987553913498579
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.43,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.40602742882091075
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.85,
+        "document_value": 0.83,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.2992243054586187
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.17,
+        "document_value": 0.45,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.1908021321634547
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.14,
+        "document_value": 0.24,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.041698833412953516
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.36,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.01099324609997016
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.08,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.010177872304508563
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.08,
+        "document_value": 0.05,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.009660138067295982
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.04,
+        "document_value": 0.05,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.0062892644037875235
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0015730882886783942
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0012164518238024216
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0011153642537638398
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0009628940137556689
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0006556990209098998
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0003986593720601954
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.00037094820814527826
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0003465141195675449
+      }
+    ]
+  },
+  {
+    "test_row": 40,
+    "query": "Why won't my card show up on the app?",
+    "expected_label": "card_linking",
+    "document_row": 9303,
+    "document": "How long does it take to activate the card, as it does not look like its working?",
+    "retrieved_label": "activate_my_card",
+    "correct": false,
+    "relevance_score": 0.6398309372549182,
+    "denominator": 8.698234714730612,
+    "contributions": [
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.54,
+        "document_value": 0.97,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 1.3064334225780074
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.77,
+        "document_value": 0.9,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.8559767140170996
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.97,
+        "document_value": 0.98,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8472380295372905
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.76,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.717629874195098
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.73,
+        "document_value": 0.74,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.549865883629989
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.57,
+        "document_value": 0.89,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.45586241002029687
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.93,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.3786640112168035
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.79,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.19874075515968576
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.15,
+        "document_value": 0.24,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.08694124260566383
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.13,
+        "document_value": 0.22,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.03549364986935924
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.11,
+        "document_value": 0.16,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.03198759867131263
+      },
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.14,
+        "document_value": 0.06,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 0.030158851180755026
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.35,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.019518874440867195
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.05,
+        "document_value": 0.11,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.013866275625501991
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.07,
+        "document_value": 0.07,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.011795451668506944
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.004191177060357271
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0023596324330175914
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.06,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.002121897083043683
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.001967097062729699
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0018246777357036322
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0015536007841400246
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.000863900337971786
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 41,
+    "query": "I would like to reactivate my card.",
+    "expected_label": "card_linking",
+    "document_row": 1734,
+    "document": "I blocked my card by mistake, how do I unblock it?",
+    "retrieved_label": "pin_blocked",
+    "correct": false,
+    "relevance_score": 0.6962294674558869,
+    "denominator": 10.2200101266688,
+    "contributions": [
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.86,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 2.0591665400542243
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.77,
+        "document_value": 0.95,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 1.7665977490567526
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.59,
+        "document_value": 0.95,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 1.7625663491614534
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8647068548885748
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.53,
+        "document_value": 0.73,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.34767034582466566
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.26,
+        "document_value": 0.3,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.1417632213842264
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.15,
+        "document_value": 0.21,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.030350887536446818
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.85,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.025956275513818437
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.17,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.015509760753480874
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.25,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.01203617517194586
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.94,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.011960489601606021
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.06,
+        "document_value": 0.15,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.011116580701520771
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.11,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.010245099480873331
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.04,
+        "document_value": 0.1,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.010084564091274175
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.1,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.009835485313648496
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.08,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.00794263493580067
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.05,
+        "document_value": 0.07,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.006506291480289066
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0031461765773567883
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0031072015682800493
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0028883928726327235
+      },
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 0.0021542036557682157
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.001483792832581113
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.000863900337971786
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.0003900435387815315
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0003536495138406138
+      }
+    ]
+  },
+  {
+    "test_row": 42,
+    "query": "Where do I link the new card?",
+    "expected_label": "card_linking",
+    "document_row": 3076,
+    "document": "I have lost my card, but need to place an online order! How do I get a virtual card instantly?",
+    "retrieved_label": "getting_virtual_card",
+    "correct": false,
+    "relevance_score": 0.6106795080638644,
+    "denominator": 7.991543391877467,
+    "contributions": [
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.77,
+        "document_value": 0.89,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 1.709237923811967
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.96,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8470597762173794
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.39,
+        "document_value": 0.72,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.6781416923241779
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.66,
+        "document_value": 0.86,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.5100483026365474
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.93,
+        "document_value": 0.96,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.3786640112168035
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.36,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.33992994040820435
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.07,
+        "document_value": 0.83,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.18270313093002757
+      },
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.1,
+        "document_value": 0.23,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 0.08257780680444829
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.97,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.05086318800060142
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.17,
+        "document_value": 0.08,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.01679838861563139
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.12,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.015266808456762846
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.12,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.011913952403701002
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.07,
+        "document_value": 0.07,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.011795451668506944
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.05,
+        "document_value": 0.03,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.006779088614652548
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.13,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.00459744367992798
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.08,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.004461457015055359
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.05,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0038840019603500623
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0038511904968436313
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.05,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.003041129559506054
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.07,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.002137575630549754
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.03,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.002079084717405269
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.001967097062729699
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.001560174155126126
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.001512684613691126
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0012958505069576788
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 43,
+    "query": "I have received my card, can you help me put it in the app?",
+    "expected_label": "card_linking",
+    "document_row": 9242,
+    "document": "My card is not able to be activated how do I get it to work?",
+    "retrieved_label": "activate_my_card",
+    "correct": false,
+    "relevance_score": 0.6684483491860088,
+    "denominator": 6.710367121551807,
+    "contributions": [
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.9,
+        "document_value": 0.98,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 2.199836347296301
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8647068548885748
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.82,
+        "document_value": 0.9,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.6631706260496335
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.2,
+        "document_value": 0.48,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.23184331361510357
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.56,
+        "document_value": 0.97,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.2303878706238437
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.68,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.06415049691863274
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.12,
+        "document_value": 0.55,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.06359233579065048
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.22,
+        "document_value": 0.14,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.0559782976747971
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.07,
+        "document_value": 0.27,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.023344819473193626
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.42,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.021177584591675763
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.16,
+        "document_value": 0.09,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.017870928605551506
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.64,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.013029032414779452
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.04,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.005134920662458175
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.06,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.004333023061900509
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.003725490720317575
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.1,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.003717880845879466
+      },
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 0.002872271541024288
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0026227960836395993
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.07,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.002475546596884297
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0015536007841400246
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.000863900337971786
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.03,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0007865441443391971
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0006082259119012108
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0004016158190948544
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0003986593720601954
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 44,
+    "query": "How do I link a card that I already have?",
+    "expected_label": "card_linking",
+    "document_row": 1734,
+    "document": "I blocked my card by mistake, how do I unblock it?",
+    "retrieved_label": "pin_blocked",
+    "correct": false,
+    "relevance_score": 0.6553119330770772,
+    "denominator": 6.87294132121127,
+    "contributions": [
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.8,
+        "document_value": 0.86,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 1.7159721167118538
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.97,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8558833155529771
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.37,
+        "document_value": 0.95,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.8488846326636343
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.64,
+        "document_value": 0.73,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.4198283421278981
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.94,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.3827356672513927
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.95,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.0896220177539722
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.12,
+        "document_value": 0.3,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.06542917910041218
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.85,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.025956275513818437
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.11,
+        "document_value": 0.21,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.022257317526727664
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.25,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.018054262757918788
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.05,
+        "document_value": 0.15,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 0.00926381725126731
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.1,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.006556990209098998
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.06,
+        "document_value": 0.08,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.005956976201850501
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.17,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.005169920251160292
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.1,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.005042282045637087
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.03,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0038511904968436313
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0036155139278146926
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.07,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0026025165921156265
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.14,
+        "document_value": 0.01,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.002475546596884297
+      },
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 0.0021542036557682157
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0020714677121867
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.0011701306163445944
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.04,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0010487255257855962
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0010395423587026345
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.000863900337971786
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0003986593720601954
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 1,
+    "query": "I still have not received my new card, I ordered over a week ago.",
+    "expected_label": "card_arrival",
+    "document_row": 143,
+    "document": "I was supposed to receive my new card by now, but it hasn't came in.",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7533167733808456,
+    "denominator": 10.889197428822927,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.448161984999657
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.97,
+        "document_value": 0.95,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.1382143462723768
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9253648377778896
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.98,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8647068548885748
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.97,
+        "document_value": 0.95,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8280646773776928
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.78,
+        "document_value": 0.87,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.6907422966147918
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.24,
+        "document_value": 0.26,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.15563468035293557
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.18,
+        "document_value": 0.16,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.06955299408453107
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.13,
+        "document_value": 0.18,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.029040258984021197
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.07,
+        "document_value": 0.09,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.011450106342572132
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.05,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.011006212706628169
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.12,
+        "document_value": 0.13,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.006616441056207587
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0019255952484218157
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0018246777357036322
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0015730882886783942
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.001444341020633503
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0012958505069576788
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.001195978116180586
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.00025476075960067065
+      }
+    ]
+  },
+  {
+    "test_row": 2,
+    "query": "I ordered a card but it has not arrived. Help please!",
+    "expected_label": "card_arrival",
+    "document_row": 68,
+    "document": "2 weeks ago I ordered my new card.  It isn't here.  What should I do?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7484034265322347,
+    "denominator": 10.609495550494492,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.4833473113772047
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.96,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.138337863835727
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9253648377778896
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.96,
+        "document_value": 0.98,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8385036168616483
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.95,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8195279281263764
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.65,
+        "document_value": 0.73,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.48299030318850383
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.2,
+        "document_value": 0.87,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.07379876562693079
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.21,
+        "document_value": 0.21,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.05472971885450147
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.08,
+        "document_value": 0.2,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.03990632829562451
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.08,
+        "document_value": 0.11,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.021252303748051163
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.07,
+        "document_value": 0.08,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.01760994033060507
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.1,
+        "document_value": 0.04,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.007973187441203908
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.07,
+        "document_value": 0.05,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.006506291480289066
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.0038167021141907115
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0027370166035554483
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0021665115309502546
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.04,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0020974510515711924
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0016005016556624356
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0015536007841400246
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.001483792832581113
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 3,
+    "query": "Is there a way to know when my card will arrive?",
+    "expected_label": "card_arrival",
+    "document_row": 2,
+    "document": "I have been waiting over a week. Is the card still coming?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7880525374416586,
+    "denominator": 8.478927581535938,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.78,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 2.744455457448707
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.1862626784156165
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.97,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8558833155529771
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.83,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.7160086108893604
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.59,
+        "document_value": 0.95,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.5400530941009029
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.9,
+        "document_value": 0.75,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.2862883149320591
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.21,
+        "document_value": 0.78,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.20328181288814837
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.13,
+        "document_value": 0.29,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.09402928604656523
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.07,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.008905638266444993
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.39,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.007939566627756228
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.006603727623976901
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0036155139278146926
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.0028980414201887944
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0025917010139153577
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.06,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.002079084717405269
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0020714677121867
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0019257880275113377
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.05,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.001858940422939733
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0018246777357036322
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.001560174155126126
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.06,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.001195978116180586
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0010609485415218414
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0006556990209098998
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0005243627628927981
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0004016158190948544
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 4,
+    "query": "My card has not arrived yet.",
+    "expected_label": "card_arrival",
+    "document_row": 151,
+    "document": "My card appears to have never arrived?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7424129807870292,
+    "denominator": 10.702683072438502,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.448161984999657
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.93,
+        "document_value": 0.94,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.0797905388077178
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9253648377778896
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8735303942241726
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.96,
+        "document_value": 0.88,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.7591416597381171
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.58,
+        "document_value": 0.75,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.44278352347102035
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.17,
+        "document_value": 0.29,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.15503036755336247
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.22,
+        "document_value": 0.21,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.11522952295361576
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.07,
+        "document_value": 0.3,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.05071572485330391
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.16,
+        "document_value": 0.18,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.03574185721110301
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.07,
+        "document_value": 0.39,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.01157877184836328
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.13,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.010225073876409562
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.04,
+        "document_value": 0.1,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.009628940137556687
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.06,
+        "document_value": 0.06,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.006542917910041218
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.002432903647604843
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0020714677121867
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0012958505069576788
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.001195978116180586
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0004016158190948544
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 6,
+    "query": "Do you know if there is a tracking number for the new card you sent me?",
+    "expected_label": "card_arrival",
+    "document_row": 2,
+    "document": "I have been waiting over a week. Is the card still coming?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7690299024618387,
+    "denominator": 8.978669591122744,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.9,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.166679373979277
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.97,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.174157957207294
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.99,
+        "document_value": 0.97,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8558833155529771
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.75,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.6469957327313498
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.64,
+        "document_value": 0.95,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.5858203054653862
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.21,
+        "document_value": 0.78,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.20328181288814837
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.4,
+        "document_value": 0.75,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.12723925108091516
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.1,
+        "document_value": 0.29,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.0723302200358194
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.39,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.011909349941634341
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.07,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.008905638266444993
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.04,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.008804970165302534
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.06,
+        "document_value": 0.04,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.005777364082534012
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.04,
+        "document_value": 0.04,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.003864055226918393
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0036155139278146926
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0031072015682800493
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0025917010139153577
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.06,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.002391956232361172
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.06,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.002079084717405269
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0019255952484218157
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.05,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.001858940422939733
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0018246777357036322
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0015730882886783942
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.001560174155126126
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0010609485415218414
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 7,
+    "query": "i have not received my card",
+    "expected_label": "card_arrival",
+    "document_row": 143,
+    "document": "I was supposed to receive my new card by now, but it hasn't came in.",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7387128285782119,
+    "denominator": 10.698683167110195,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.448161984999657
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.92,
+        "document_value": 0.95,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.0795435036810173
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9253648377778896
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8559724422129327
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.9,
+        "document_value": 0.95,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.7683074326184779
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.66,
+        "document_value": 0.87,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.584474250981747
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.14,
+        "document_value": 0.26,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.09078689687254575
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.11,
+        "document_value": 0.16,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.042504607496102326
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.19,
+        "document_value": 0.18,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.04244345543818483
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.08,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.01760994033060507
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.06,
+        "document_value": 0.09,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.009814376865061827
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.09,
+        "document_value": 0.13,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.004962330792155691
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.06,
+        "document_value": 0.03,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.004719264866035183
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.06,
+        "document_value": 0.03,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.004333023061900509
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0028883928726327235
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.002794118040238181
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0018246777357036322
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0015536007841400246
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 8,
+    "query": "still waiting on that card",
+    "expected_label": "card_arrival",
+    "document_row": 2,
+    "document": "I have been waiting over a week. Is the card still coming?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7230844443955033,
+    "denominator": 10.895060687307161,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.96,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.3777913322445623
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.96,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.1620532359989715
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.96,
+        "document_value": 0.95,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.8787304581980792
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8454077574356305
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.95,
+        "document_value": 0.97,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8213021714902305
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.43,
+        "document_value": 0.78,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.41624371210430383
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.23,
+        "document_value": 0.29,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.16635950608238464
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.24,
+        "document_value": 0.39,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.09527479953307473
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.1,
+        "document_value": 0.75,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.03180981277022879
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.11,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.013994574418699276
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.06,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.013207455247953801
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.07,
+        "document_value": 0.04,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.006762096647107189
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.005423270891722038
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.05,
+        "document_value": 0.04,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.00431950168985893
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.04,
+        "document_value": 0.05,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.003717880845879466
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.06,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0035879343485417585
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.05,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0032093254140363597
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.06,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.003118627076107904
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.002888682041267006
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0027370166035554483
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.05,
+        "document_value": 0.03,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0026523713538046034
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.002340261232689189
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0020714677121867
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.001967097062729699
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0015730882886783942
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0015285645576040238
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.001483792832581113
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.0009387747602178221
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.00072025369936251
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 10,
+    "query": "How do I track my card?",
+    "expected_label": "card_arrival",
+    "document_row": 18,
+    "document": "My new card has not been delivered to my home yet. What is going on?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7536664835675405,
+    "denominator": 7.632235617710017,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.69,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 2.4525608620921133
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.9,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.0894249087490357
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.97,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8558833155529771
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.54,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.46583692756657186
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.42,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.3965849304762384
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.97,
+        "document_value": 0.95,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.3908365662368777
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.06,
+        "document_value": 0.19,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.02843325891063246
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.64,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.013029032414779452
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.06,
+        "document_value": 0.13,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.009680086328007065
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.05,
+        "document_value": 0.06,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.009433896605681285
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.05,
+        "document_value": 0.06,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.007221705103167516
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.06,
+        "document_value": 0.06,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.006542917910041218
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.04,
+        "document_value": 0.06,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.005796082840377589
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.05,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0026218138144639904
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0015536007841400246
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0012164518238024216
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0011153642537638398
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.000863900337971786
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.0007973187441203908
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.00037094820814527826
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 11,
+    "query": "How long does a card delivery take?",
+    "expected_label": "card_arrival",
+    "document_row": 2,
+    "document": "I have been waiting over a week. Is the card still coming?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7494452415031249,
+    "denominator": 5.602410732628405,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.36,
+        "document_value": 0.98,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 1.2666717495917108
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.87,
+        "document_value": 0.98,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.053110745124068
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.97,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8472380295372905
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.38,
+        "document_value": 0.96,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.3278111712505506
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.91,
+        "document_value": 0.75,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.28946929620908196
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.18,
+        "document_value": 0.95,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.16476196091213985
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.15,
+        "document_value": 0.78,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.14520129492010597
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.08,
+        "document_value": 0.29,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.057864176028655526
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.39,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.007939566627756228
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.07,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.006603727623976901
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.04,
+        "document_value": 0.07,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.005088936152254282
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.04,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0025917010139153577
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.06,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.002079084717405269
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.0020714677121867
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.0019320276134591964
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0019257880275113377
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.05,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.001858940422939733
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.04,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.04,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.001560174155126126
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0012837301656145439
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.06,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.001195978116180586
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0010609485415218414
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0009313726800793937
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.01,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0009123388678518161
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0008002508278312178
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.0007418964162905565
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0006556990209098998
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0005243627628927981
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0005095215192013413
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0005042282045637088
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.01,
+        "document_value": 0.02,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  },
+  {
+    "test_row": 12,
+    "query": "I still don't have my card after 2 weeks.  What should I do?",
+    "expected_label": "card_arrival",
+    "document_row": 150,
+    "document": "My card still hasn't arrived after two weeks, now what?",
+    "retrieved_label": "card_arrival",
+    "correct": true,
+    "relevance_score": 0.7470623100724296,
+    "denominator": 11.14952897943575,
+    "contributions": [
+      {
+        "feature": "card_not_received",
+        "family": "event",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 3.5903394262803596,
+        "raw_contribution": 3.4833473113772047
+      },
+      {
+        "feature": "wants_status",
+        "family": "user_intent",
+        "query_value": 0.95,
+        "document_value": 0.97,
+        "global_weight": 1.235175633502308,
+        "raw_contribution": 1.1382143462723768
+      },
+      {
+        "feature": "missing",
+        "family": "state",
+        "query_value": 0.98,
+        "document_value": 0.98,
+        "global_weight": 0.9635202392522799,
+        "raw_contribution": 0.9253648377778896
+      },
+      {
+        "feature": "is_about_card",
+        "family": "entity",
+        "query_value": 0.98,
+        "document_value": 0.99,
+        "global_weight": 0.8912665995553235,
+        "raw_contribution": 0.8647068548885748
+      },
+      {
+        "feature": "pending",
+        "family": "state",
+        "query_value": 0.97,
+        "document_value": 0.97,
+        "global_weight": 0.898605184349097,
+        "raw_contribution": 0.8454976179540653
+      },
+      {
+        "feature": "incorrect",
+        "family": "state",
+        "query_value": 0.68,
+        "document_value": 0.67,
+        "global_weight": 1.0178931574046446,
+        "raw_contribution": 0.46375212251355613
+      },
+      {
+        "feature": "wants_information",
+        "family": "user_intent",
+        "query_value": 0.92,
+        "document_value": 0.86,
+        "global_weight": 0.4241308369363838,
+        "raw_contribution": 0.33557231818406685
+      },
+      {
+        "feature": "wants_activate",
+        "family": "user_intent",
+        "query_value": 0.22,
+        "document_value": 0.26,
+        "global_weight": 2.4941455184765315,
+        "raw_contribution": 0.1426651236568576
+      },
+      {
+        "feature": "payment_missing",
+        "family": "event",
+        "query_value": 0.18,
+        "document_value": 0.21,
+        "global_weight": 1.2410367087188545,
+        "raw_contribution": 0.0469111875895727
+      },
+      {
+        "feature": "card_not_working",
+        "family": "event",
+        "query_value": 0.07,
+        "document_value": 0.11,
+        "global_weight": 3.144632201893762,
+        "raw_contribution": 0.02421366795458197
+      },
+      {
+        "feature": "wants_change",
+        "family": "user_intent",
+        "query_value": 0.11,
+        "document_value": 0.08,
+        "global_weight": 2.4150345168239955,
+        "raw_contribution": 0.021252303748051163
+      },
+      {
+        "feature": "is_about_account",
+        "family": "entity",
+        "query_value": 0.1,
+        "document_value": 0.06,
+        "global_weight": 1.8174771972336718,
+        "raw_contribution": 0.010904863183402032
+      },
+      {
+        "feature": "wants_cancel",
+        "family": "user_intent",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 3.0411295595060537,
+        "raw_contribution": 0.0027370166035554483
+      },
+      {
+        "feature": "security_concern",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.6218138144639904,
+        "raw_contribution": 0.0023596324330175914
+      },
+      {
+        "feature": "unrecognized",
+        "family": "state",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.407235034389172,
+        "raw_contribution": 0.0021665115309502546
+      },
+      {
+        "feature": "is_about_cash",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 2.159750844929465,
+        "raw_contribution": 0.0019437757604365185
+      },
+      {
+        "feature": "is_about_identity_verification",
+        "family": "entity",
+        "query_value": 0.03,
+        "document_value": 0.02,
+        "global_weight": 3.2093254140363596,
+        "raw_contribution": 0.0019255952484218157
+      },
+      {
+        "feature": "expired",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.6568634003969684,
+        "raw_contribution": 0.0018627453601587874
+      },
+      {
+        "feature": "is_about_direct_debit",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 4.519392409768366,
+        "raw_contribution": 0.0018077569639073463
+      },
+      {
+        "feature": "payment_failed",
+        "family": "event",
+        "query_value": 0.03,
+        "document_value": 0.03,
+        "global_weight": 1.858940422939733,
+        "raw_contribution": 0.0016730463806457598
+      },
+      {
+        "feature": "credential_problem",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 3.2784951045494988,
+        "raw_contribution": 0.0013113980418197997
+      },
+      {
+        "feature": "wants_refund",
+        "family": "user_intent",
+        "query_value": 0.02,
+        "document_value": 0.03,
+        "global_weight": 1.993296860300977,
+        "raw_contribution": 0.001195978116180586
+      },
+      {
+        "feature": "payment_unrecognized",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.589334640233375,
+        "raw_contribution": 0.00103573385609335
+      },
+      {
+        "feature": "is_about_cash_withdrawal",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5476075960067064,
+        "raw_contribution": 0.0010190430384026826
+      },
+      {
+        "feature": "declined",
+        "family": "state",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.5211410228185436,
+        "raw_contribution": 0.0010084564091274175
+      },
+      {
+        "feature": "charged_fee",
+        "family": "event",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 2.008079095474272,
+        "raw_contribution": 0.0008032316381897088
+      },
+      {
+        "feature": "is_about_bank_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.9502176939076574,
+        "raw_contribution": 0.000780087077563063
+      },
+      {
+        "feature": "is_about_topup",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.768247569203069,
+        "raw_contribution": 0.0007072990276812276
+      },
+      {
+        "feature": "is_about_transfer",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.02,
+        "global_weight": 1.7325705978377244,
+        "raw_contribution": 0.0006930282391350898
+      },
+      {
+        "feature": "is_about_currency_exchange",
+        "family": "entity",
+        "query_value": 0.02,
+        "document_value": 0.01,
+        "global_weight": 2.3469369005445553,
+        "raw_contribution": 0.00046938738010891107
+      },
+      {
+        "feature": "duplicate_transaction",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 4.001254139156089,
+        "raw_contribution": 0.0004001254139156089
+      },
+      {
+        "feature": "transaction_reversed",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.7094820814527827,
+        "raw_contribution": 0.00037094820814527826
+      },
+      {
+        "feature": "cash_not_received",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.60126849681255,
+        "raw_contribution": 0.000360126849681255
+      },
+      {
+        "feature": "wrong_exchange_rate",
+        "family": "event",
+        "query_value": 0.01,
+        "document_value": 0.01,
+        "global_weight": 3.5939691943309384,
+        "raw_contribution": 0.00035939691943309384
+      }
+    ]
+  }
+]

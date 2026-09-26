@@ -1,0 +1,89 @@
+{
+  "verified_at": "2026-09-26T20:46:13.050Z",
+  "passed": true,
+  "node_version": "v24.19.0",
+  "platform": "win32",
+  "scope": "Full deterministic evaluation of saved JEV outputs; not an independent attestation of API origin.",
+  "api_calls": 0,
+  "api_credentials_passed": false,
+  "fetch_disabled": true,
+  "original_results_overwritten": false,
+  "replay_directory": "data/reproductions/replay-knf1Ks",
+  "input_sha256": {
+    "package.json": "22186ca2c74e3a325001f71bfbe5c1b311981b9e2ad6dafb1903be8ced5e5aa8",
+    "study/schema.js": "bdddfa81f4f4a14ed5f47b821a1259147b2c81c26f1e5653af106a78f80b7668",
+    "study/queries.js": "b0648a6efb46745a802ad5e40992756a7f06152cd159b606872b8ed4e6461b8c",
+    "study/data.js": "ea20b7f67687d2827104ac945893dbfc41a32ebd401db9be61a3f94455bb8fd2",
+    "study/math.js": "e7bb9d289a6d79d0fbafd25826865d3520e95745fefa03c4ac027b068058854c",
+    "study/evaluate.js": "84957549de7c0fa1aa601271c1bd18e181a6848d8501428032bdab325eaedc9d",
+    "study/audit.js": "dd81ddaeacda1202399ded33a4aa3ee7051ec8352327671142c55f57eb59371e",
+    "study/diagnose.js": "c22763a937834373622afe5ae2caca1bc0fde2a86d46beedd644cca74c5e16f7",
+    "study/frozen.json": "1d21a6e2e7cc3fb6bfa8fb19f8ac35082bc9991f112fcbd1eb3c8d15a0cd1f4e",
+    "study/frozen-queries.json": "1d6b1af886196dc2b241197277cd64d8f15fa489a985944376405ea041b5ed37",
+    "data/banking77/train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "data/banking77/test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+    "data/banking77/categories.json": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63",
+    "data/banking77/manifest.json": "c95a79ebc191dbdcac72365bf77ffdfe7b16a3b098497b01384196fbc1dfab06",
+    "data/banking77/study.sqlite": "cc439082279182fca7be9ed9b5b400ccb5b004d2406cfffb85b803822b0f4aac"
+  },
+  "original_results_sha256": "6276a1dc95de8182cc7fcf6437770fcb765fddd685e339c218dfa35abbbb3f70",
+  "all_non_timing_result_fields_match": true,
+  "excluded_comparison_fields": [
+    "results.generated_at",
+    "results.evaluation_wall_seconds",
+    "results.e1_e2.*.latency_ms",
+    "diagnostics.generated_at"
+  ],
+  "exact_artifact_matches": {
+    "e1-predictions.jsonl": {
+      "exact_bytes_match": true,
+      "sha256": "b3c6e56c56f6e019b8950d90de7e5f256238a8147cad2b25b950c387f361f640"
+    },
+    "e1-summary.csv": {
+      "exact_bytes_match": true,
+      "sha256": "6fa10fb18b50ebc28f595b8bbf80d6af60ffb691e3dccbc17f2235d099de6391"
+    },
+    "e3-queries.json": {
+      "exact_bytes_match": true,
+      "sha256": "e025961d5537ce94b41204d7fbd77b537c74cfee566187781c3f3f8cb568a9ec"
+    },
+    "e3-interpretations.json": {
+      "exact_bytes_match": true,
+      "sha256": "11a0da4e31c25876d55a8537246fa81a239b6037e3320da5f807355dc9e17188"
+    },
+    "e5-ablation-per-query.json": {
+      "exact_bytes_match": true,
+      "sha256": "c070a571345f12b4cb1ddc2ed041d27c1427524e3c3230e350fc5ab0f204630a"
+    },
+    "feature-weights.json": {
+      "exact_bytes_match": true,
+      "sha256": "eaff0e299e72df2307a3ae4fb389c57642db334dcfe0018d05635cdea8fe5392"
+    },
+    "explanations.json": {
+      "exact_bytes_match": true,
+      "sha256": "b3a7c0642cf7935def0f21050a63cb102861904ccf2f7969a35ae057dcb44c4b"
+    }
+  },
+  "diagnostic_metrics_match": true,
+  "independent_sort_audit": {
+    "checked_at": "2026-09-26T20:46:12.650Z",
+    "passed": true,
+    "vector_rows_verified": 13083,
+    "full_sort_reference_queries": 31,
+    "ranking_comparisons": 124,
+    "checked_methods": [
+      "bm25",
+      "cosine",
+      "dot",
+      "weighted"
+    ],
+    "checks": [
+      "Every row matches its official text fingerprint",
+      "Every saved score equals its typed JEV answer",
+      "Pinned response model identities",
+      "Independent full-sort top-10 and exact first-relevant ranks",
+      "No numeric control violations",
+      "Complete experiment counts"
+    ]
+  }
+}

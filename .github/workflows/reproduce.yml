@@ -1,0 +1,22 @@
+name: Verify and reproduce BANKING77 study
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify published evidence bytes
+        run: node study/verify-evidence.js
+      - name: Test retrieval and adapter behavior
+        run: node --test
+      - name: Reproduce all saved study results without an API key
+        run: node study/reproduce.js

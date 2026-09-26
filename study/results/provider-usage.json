@@ -1,0 +1,17 @@
+{
+  "source_kind": "user_supplied_provider_dashboard_screenshot",
+  "received_on": "2026-09-26",
+  "project_filter": "JEVbeddings",
+  "period_label": "Last 7 days",
+  "aggregation": "Hourly",
+  "displayed_spend_usd": 2.0765,
+  "spend_label": "Estimated",
+  "displayed_input_tokens": 49439654,
+  "displayed_total_tokens": 57833096,
+  "displayed_requests": 13232,
+  "input_price_usd_per_million": 0.042,
+  "output_price_note": "Free output",
+  "screenshot": "jevbeddings-usage-2026-09-26.png",
+  "screenshot_sha256": "3d6c000708bb1d6b2ae1b3e39082724b21bca70e6e208198bc616c3c5ee176a9",
+  "scope_note": "Project total, not reconciled request by request with the preserved study logs. Not an invoice. Exact reporting boundaries and timezone unavailable."
+}
