@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T20:47:02.916Z",
+  "generated_at": "2026-09-26T20:56:17.179Z",
   "statement": "Local inventory generated after the study. Hashes detect later byte changes; they do not prove when or by whom files were created.",
   "excludes": [
     "This manifest itself",
@@ -155,8 +155,8 @@
       "sha256": "35077fbf0319cf735eff38e17e2b4bb35c5fa256bb382d09d6056d8f83779dda"
     },
     "study/STUDIE-NO.md": {
-      "bytes": 23717,
-      "sha256": "d0a150ffa957775d360913a8ee77ba24bc737d4552aa1809f2777f781e39fb76"
+      "bytes": 20807,
+      "sha256": "bc62ab4c19a7168d199ecffd21b999df220959b847c2b51d42679c6e8885f24b"
     },
     "study/audit.js": {
       "bytes": 3864,

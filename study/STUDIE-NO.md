@@ -39,11 +39,7 @@ Jeg definerte fire grupper med egenskaper:
 | Hva kunden ønsker | 6 | Kansellere, få refusjon, endre noe, få status |
 | Tilstand | 6 | Venter, avvist, mangler, feil, ukjent, utløpt |
 
-For hver tekst stilte jeg de samme 34 spørsmålene til `jev-1.13.0`. Hvert svar er en verdi mellom 0 og 1. Teksten blir dermed representert som en vektor:
-
-$$
-\mathbf{x}=(x_1,x_2,\ldots,x_{34}),\qquad x_i\in[0,1].
-$$
+For hver tekst stilte jeg de samme 34 spørsmålene til `jev-1.13.0`. Hvert svar er en verdi mellom 0 og 1. Til sammen danner svarene en vektor med 34 tall.
 
 Tenk på hvert tall som modellens vurdering av hvor godt teksten oppfyller den tilhørende egenskapen. Jeg har ikke menneskelige fasitverdier for alle egenskapene. Derfor tolker jeg ikke for eksempel 0,9 som en dokumentert 90 % sannsynlighet for at egenskapen er riktig.
 
@@ -66,19 +62,19 @@ Alle definisjonene og de nøyaktige spørsmålene finnes i [egenskapsskjemaet](s
 
 ## Hvordan jeg satte opp testen
 
-Jeg brukte [BANKING77](https://github.com/PolyAI-LDN/task-specific-datasets), introdusert av [Casanueva og kolleger i 2020](https://aclanthology.org/2020.nlp4convai-1.5/). Datasettet inneholder engelske bankhenvendelser fordelt på 77 intensjoner, altså kategorier for hva kunden spør om.
+Jeg brukte [BANKING77](https://github.com/PolyAI-LDN/task-specific-datasets), introdusert av [Casanueva og kolleger i 2020](https://aclanthology.org/2020.nlp4convai-1.5/). Datasettet består av engelske bankhenvendelser fordelt på 77 kategorier.
 
-Hele den offisielle delingen ble brukt: 10 003 meldinger som dokumenter og 3 080 meldinger som søk. Hvert søk ble sammenlignet med hele dokumentsettet. Jeg trente ikke en klassifikator til å velge mellom de 77 kategoriene. Jeg hentet dokumenter og brukte kategoriene etterpå til å vurdere treffene.
+Jeg fulgte den offisielle delingen: 10 003 meldinger som dokumenter og 3 080 som søk. Hvert søk ble sammenlignet med alle dokumentene. Kategoriene ble brukt til å vurdere treffene, ikke til å trene en klassifikator.
 
-JEV fikk meldingsteksten og de faste egenskapsspørsmålene. Modellen fikk ikke kategoriens navn eller merkede eksempler. De 34 dimensjonene var heller ikke en omskriving av alle de 77 kategoriene. Enkelte egenskaper ligger likevel naturlig nær temaer i datasettet. Dette er et skjema laget for bankhenvendelser, ikke en representasjon uten domenekunnskap.
+JEV fikk bare meldingsteksten og de faste egenskapsspørsmålene, uten kategorinavn eller merkede eksempler. De 34 egenskapene var ikke omskrivinger av de 77 kategoriene, men skjemaet var laget for bankhenvendelser og hadde derfor noe tematisk overlapp.
 
-Skjema og protokoll ble låst og kontrollsummert før testfilen ble hentet. Tilleggssøkene ble laget fra treningssettets kategorioversikt og låst før testresultatene ble undersøkt. Ingen parametere ble tilpasset for å forbedre resultatene på testsettet. Protokollen er lokalt tidsstemplet; dette var ikke en offentlig forhåndsregistrering.
+Skjema og protokoll ble låst og kontrollsummert før testfilen ble hentet. Tilleggssøkene ble laget fra treningssettets kategorioversikt og låst før testresultatene ble undersøkt. Ingen parametere ble tilpasset testresultatene. Tidsstemplingen var lokal, ikke en offentlig forhåndsregistrering.
 
-En viktig detalj: I hovedtesten fikk både søk og dokumenter samme egenskapsvurdering. En høy verdi i søkevektoren betyr dermed at egenskapen finnes i meldingen. Den betyr ikke nødvendigvis at brukeren har bedt systemet prioritere akkurat denne egenskapen. Senere tester jeg også eksplisitte søkekrav. Det er to forskjellige måter å bruke tallene på.
+I hovedtesten ble søk og dokumenter vurdert på samme måte. En høy verdi betyr at egenskapen finnes i meldingen, ikke nødvendigvis at brukeren vil prioritere den. Senere testet jeg også eksplisitte søkekrav, som bruker tallene på en annen måte.
 
 ## Fire måter å rangere på
 
-La $\mathbf{q}$ være egenskapsvektoren til søket og $\mathbf{d}$ vektoren til et dokument. Jeg sammenlignet tre beregninger over disse vektorene, i tillegg til BM25 på originalteksten.
+Jeg sammenlignet tre måter å rangere JEV-vektorene på, i tillegg til BM25 på originalteksten. I formlene under er $q$ søkets tall og $d$ dokumentets tall.
 
 ### Dot product: summer det som overlapper
 
@@ -91,7 +87,7 @@ $$
 
 Hvis både søket og dokumentet scorer høyt på «kort ikke mottatt», blir bidraget stort. Hvis én av dem scorer lavt, blir bidraget lite. Hver egenskap har sitt eget bidrag som jeg kan vise frem.
 
-Men legg merke til hva som mangler i formelen: Det finnes ingen direkte straff for egenskaper dokumentet har og søket ikke har. Alle leddene er ikke-negative. Et dokument med høye verdier på mange egenskaper kan derfor få et fortrinn.
+Et dokument med høye verdier på mange egenskaper kan få et fortrinn, selv om det ikke passer særlig presist til søket.
 
 ### Cosinus: sammenlign retningen
 
@@ -103,53 +99,21 @@ s_{\mathrm{cos}}(\mathbf{q},\mathbf{d})
 {\sqrt{\sum_i q_i^2}\sqrt{\sum_i d_i^2}}.
 $$
 
-Her betyr lengde den matematiske normen til tallrekken, ikke antall ord i teksten. Hvis en vektor er null, setter implementeringen likheten til null.
+Da teller mønsteret i egenskapene mer enn hvor høye verdiene er samlet. Lengde betyr her størrelsen på vektoren, ikke antall ord i teksten.
 
-Et lite regneeksempel viser forskjellen. Tallene under er konstruert for å forklare matematikken, ikke hentet fra datasettet:
+Et konstruert eksempel: Søket er `[1; 0,5; 0]`, dokument A er `[0,9; 0,45; 0]`, og B er `[1; 1; 1]`. Dot product gir A 1,125 og B 1,5. Med cosinus får A 1 og B omtrent 0,775. A vinner fordi egenskapene har samme innbyrdes forhold som i søket.
 
-$$
-\mathbf{q}=(1,\,0{,}5,\,0),\quad
-\mathbf{d}_A=(0{,}9,\,0{,}45,\,0),\quad
-\mathbf{d}_B=(1,\,1,\,1).
-$$
-
-Dot product gir dokument A en score på 1,125 og dokument B en score på 1,5. B vinner. Med cosinus får A en score på 1, mens B får omtrent 0,775. A har akkurat samme forhold mellom egenskapene som søket, og vinner når jeg sammenligner retningen.
-
-Dette har også en kostnad. Vektorene $(0{,}1,0{,}1)$ og $(1,1)$ peker i samme retning. Cosinus skiller ikke mellom styrken deres. Om det er ønskelig, avhenger av hva tallene skal bety i søket. Matematikk alene avgjør ikke hvilken metode som passer oppgaven best.
+Cosinus skiller dermed ikke mellom svake og sterke verdier som har samme forhold. Om det er ønskelig, avhenger av oppgaven.
 
 ### Vektet relevans: la sjeldne egenskaper telle mer
 
-Noen egenskaper forekommer i mange dokumenter. Jeg prøvde derfor også å gi mindre vanlige egenskaper høyere vekt:
+Noen egenskaper forekommer i mange dokumenter. Jeg testet derfor også en variant av dot product der sjeldne egenskaper teller mer. Vektene ble beregnet bare fra treningsdokumentene, med 0,5 som terskel for at en egenskap er til stede.
 
-$$
-w_i=\ln\left(\frac{N+1}{df_i+1}\right),\qquad
-df_i=\sum_{d\in D}\mathbf{1}[d_i\geq0{,}5].
-$$
-
-$N$ er antall dokumenter, og $df_i$ er antallet som har verdi minst 0,5 på egenskap $i$. Vektene beregnes bare fra treningsdokumentene. De brukes slik:
-
-$$
-s_{\mathrm{vektet}}(\mathbf{q},\mathbf{d})
-=\frac{\sum_i w_i q_i d_i}{\sum_i w_i q_i}.
-$$
-
-Ved null nevner settes scoren til null. Ellers kan scoren leses som et vektet gjennomsnitt av dokumentets egenskapsverdier, med søkevektoren og de globale vektene som prioritering.
-
-Nevneren er den samme for alle dokumenter i ett søk. Den endrer derfor ikke rekkefølgen. Forskjellen fra vanlig dot product kommer fra vektene $w_i$, ikke fra at jeg deler på summen. Cosinus gjør noe annet: Der påvirker også dokumentets norm rangeringen.
+Scoren ble normalisert med en verdi som er lik for alle dokumenter i samme søk. Det endrer ikke rekkefølgen: Forskjellen fra vanlig dot product kommer fra egenskapsvektene. Den nøyaktige beregningen finnes i [rangeringskoden](math.js).
 
 ### BM25: en referanse basert på ordene
 
-BM25 bruker forekomst av søkeord i dokumentene, vekter sjeldne ord høyere og justerer for dokumentlengde. Jeg brukte følgende variant:
-
-$$
-s_{\mathrm{BM25}}(q,d)=
-\sum_{t\in T(q)}
-\ln\left(1+\frac{N-df_t+0{,}5}{df_t+0{,}5}\right)
-\frac{tf_{t,d}(k_1+1)}
-{tf_{t,d}+k_1\left(1-b+b\frac{|d|}{\overline{|d|}}\right)}.
-$$
-
-$T(q)$ er de unike ordene i søket, $tf_{t,d}$ er antall forekomster av ordet i dokumentet, og $df_t$ er antall dokumenter som inneholder ordet. Her er $|d|$ dokumentlengde målt i ordtoken, og $\overline{|d|}$ gjennomsnittlig dokumentlengde. Jeg satte $k_1=1{,}2$ og $b=0{,}75$. Teksten ble gjort om til små bokstaver og delt i sekvenser av bokstaver og tall, uten stemming eller fjerning av stoppord.
+BM25 søker direkte i teksten, gir sjeldne ord større vekt og justerer for dokumentlengde. Jeg brukte innstillingene `k1 = 1,2` og `b = 0,75`. Teksten ble gjort om til små bokstaver og delt i ord og tall, uten stemming eller fjerning av stoppord.
 
 Det gir meg en konkret referanse: Hvor mye får jeg igjen for modellvurderingene, sammenlignet med å søke direkte i ordene?
 
@@ -159,13 +123,7 @@ Hovedmålet var **Top-1**: andelen søk der det første dokumentet hadde samme k
 
 Hit@5 er ikke det samme som Recall@5. Hvis korpuset har 100 relevante dokumenter og jeg finner fire av dem blant de fem første, er Precision@5 lik 80 %, Recall@5 lik 4 %, og Hit@5 lik 1 for dette søket.
 
-Jeg brukte dessuten MRR, som belønner at det første relevante treffet kommer tidlig:
-
-$$
-\mathrm{MRR}=\frac{1}{M}\sum_{j=1}^{M}\frac{1}{r_j}.
-$$
-
-$M$ er antall søk, og $r_j$ er rangeringen til det første relevante dokumentet i søk $j$. Et søk uten relevante treff får bidrag null. Rangeringen ble beregnet over hele korpuset. nDCG@10 måler i tillegg hvor godt de relevante treffene er plassert blant de ti første, med størst uttelling øverst. Jeg brukte binær relevans fra kategoriens etikett.
+Jeg målte også **MRR**, som belønner at det første relevante treffet kommer tidlig i rangeringen, og **nDCG@10**, som vurderer plasseringen av relevante treff blant de ti første. Relevans ble i alle tilfeller bestemt av kategorien i datasettet.
 
 ## Resultatet: rangeringen gjorde stor forskjell
 
@@ -229,19 +187,9 @@ Dette er en avgrenset test. Relevans ble bestemt gjennom grupper av eksisterende
 
 Navngitte egenskaper gjør det mulig å uttrykke negative preferanser direkte. Hvis en egenskap skal trekke ned, kan jeg gi den en negativ vekt.
 
-For én uønsket egenskap $k$ kan den rå scoren skrives slik:
+Jo sterkere negativ vekt, desto mer trekkes dokumenter med denne egenskapen ned. Et bestemt dokument kan ikke få høyere råscore når straffen øker. Det garanterer likevel ikke en bedre treffliste: Dokumentene får ulike trekk, og modellens vurderinger kan være feil.
 
-$$
-s_\lambda(\mathbf{d})
-=\sum_{i\in P}w_i a_i d_i-\lambda w_k d_k,
-\qquad \lambda\geq0.
-$$
-
-$P$ er egenskapene jeg ønsker, og $a_i$ er de positive søkevektene. $\lambda$ bestemmer hvor sterk straffen skal være. I implementeringen deles scoren på summen av de positive vektbidragene; denne nevneren er fast for søket og endrer ikke rangeringen.
-
-Siden $w_k$ og $d_k$ er ikke-negative, kan ikke den rå scoren til et gitt dokument øke når jeg skrur opp straffen. Det betyr likevel ikke at andelen semantisk uønskede dokumenter i trefflisten må falle. Dokumentene får ulike trekk, og modellens egenskapsverdier kan være feil.
-
-Et hardt filter gjør noe annet. Da fjerner jeg alle dokumenter som ikke oppfyller en betingelse, for eksempel $d_k\leq0{,}2$.
+Et hardt filter fjerner i stedet alle dokumenter som bryter en betingelse, for eksempel at en uønsket egenskap har verdi over 0,2.
 
 Jeg testet åtte tilfeller med straffestyrke 0, 0,25, 0,5 og 1, samt hardt filter på 0,2. Ingen dokumenter brøt de numeriske filterkravene, og ingen råscorer økte når straffen økte.
 
@@ -296,5 +244,3 @@ Datagrunnlag og resultater følger pakken. [Dokumentasjonsoversikten](ETTERPROVB
 3. jevbeddings. [Låst protokoll](PROTOCOL.md), [implementeringspresiseringer](AMENDMENTS.md), [kjøreinstruksjoner](README.md) og [egenskapsskjema](schema.js).
 4. jevbeddings. [Teknisk resultatrapport](results/REPORT.md), [maskinlesbare resultater](results/results.json), [bidrag til konkrete treff](results/explanations.json), [etteranalyse av vinnerdokumenter](results/diagnostics.json) og [kontrollberegninger](results/audit.json).
 5. [Komplett reproduksjonspakke](results/banking77-reproduction.zip).
-
-**Om arbeidet:** Dette er en uavhengig, eksplorativ studie. Implementering, operasjonalisering av studieopplegget, analyser og manuskript er utarbeidet med Codex. Alle modellvurderinger i selve forsøket kommer fra JEV; BM25, rangering og statistikk er beregnet med vanlig kode. Ingen andre modeller ble brukt til å vurdere meldingene i studien.
