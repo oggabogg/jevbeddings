@@ -41,3 +41,25 @@ provider or independently authenticate the origin of historical API responses.
 
 The BANKING77 license and attribution are preserved. No new license for the
 project's own code has been selected by this publication.
+
+## English documentation edition
+
+On 2026-09-26, the repository's Norwegian explanatory text was translated into
+English for international readers. The main manuscript is now `study/STUDY.md`,
+with evidence notes in `study/EVIDENCE.md` and cost documentation in
+`study/COSTS.md`. The former Norwegian filenames remain as English link stubs
+so existing links still resolve. The README, report generator, generated
+Markdown/HTML report, and study-status page now use English.
+
+This is a documentation and presentation update, not a new experimental run.
+The frozen protocol, feature definitions, query fixtures, interpreter, extraction
+and evaluation code, original dataset, SQLite database, machine-readable
+results, and provider screenshot retain their original bytes. The English
+manuscript describes the dashboard amount explicitly as a displayed cost,
+consistent with the existing cost note; it does not turn that estimate into an
+invoice or alter its value.
+
+The published ZIP is unchanged and retains its original Norwegian prose. The
+website edition is also still in Norwegian. The repository's post-study evidence
+inventory has been refreshed to cover the English edition; the historical freeze
+files have not been regenerated or backdated.

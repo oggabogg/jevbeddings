@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T20:56:17.179Z",
+  "generated_at": "2026-09-26T21:24:23.462Z",
   "statement": "Local inventory generated after the study. Hashes detect later byte changes; they do not prove when or by whom files were created.",
   "excludes": [
     "This manifest itself",
@@ -23,8 +23,8 @@
       "sha256": "b969852dcfd6eacde9d98a0079cedc21939091c2559639636dff7fe6ab9abbf2"
     },
     "README.md": {
-      "bytes": 15507,
-      "sha256": "1dc2f97357d5e6fe024edcef3252e25d759efd49dfe4ee06a6ea31bbc309033e"
+      "bytes": 15734,
+      "sha256": "507ffefc8d4d77d5cb49624dca0b4ed756f67278d3ed84324938c116e36f2187"
     },
     "data/banking77/LICENSE": {
       "bytes": 18650,
@@ -51,8 +51,8 @@
       "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b"
     },
     "docs/PUBLICATION.md": {
-      "bytes": 2407,
-      "sha256": "4e731f652a7851d527d592429785e8a9960d3888760501bfc497234f4d4660b1"
+      "bytes": 3656,
+      "sha256": "4b4c528a2357aeb91bc3c8e7b5f61d8a6db72cbfb5a1398451b446c8b76728ce"
     },
     "docs/evaluation.md": {
       "bytes": 3917,
@@ -138,25 +138,37 @@
       "bytes": 1467,
       "sha256": "4e670ddb6609d2d468556d73e5c0cfb86324842a896f544f801bb4ec8071fff0"
     },
+    "study/COSTS.md": {
+      "bytes": 2182,
+      "sha256": "5d4d4b73556e3f70d25e8bd24cf6855b2f2ef69f10add29e253c13d04f744991"
+    },
     "study/ETTERPROVBARHET.md": {
-      "bytes": 9110,
-      "sha256": "89ffcfdb5b8c391562de40452636a636e7916498febe96909e2cadf5830f82a7"
+      "bytes": 214,
+      "sha256": "835c7cd68db7009f12231aef1e56bf7c5e0bcceb4e1c871768bc180e9ed2fb01"
+    },
+    "study/EVIDENCE.md": {
+      "bytes": 9218,
+      "sha256": "427c8c8535c81ceed2ebd6c31c39ef876ec2beb832cf615691b276a48ae1c061"
     },
     "study/KOSTNAD.md": {
-      "bytes": 2069,
-      "sha256": "c070330265beb00b2f78129a0a4185bac84ed1370995f8b80e9c9f428b2172d0"
+      "bytes": 203,
+      "sha256": "125e327faf539643537ffcf0456a0a739b32195c1749b701449d2a7322b90ac9"
     },
     "study/PROTOCOL.md": {
       "bytes": 8109,
       "sha256": "d2cfe459b34b6cd57c852d3cf6adb4812cf1cb4ac3a21ac9c41326558d03d175"
     },
     "study/README.md": {
-      "bytes": 5541,
-      "sha256": "35077fbf0319cf735eff38e17e2b4bb35c5fa256bb382d09d6056d8f83779dda"
+      "bytes": 5520,
+      "sha256": "58d1fa66618e02ab5d2222e0f837013dbc8e8311c97751ca5cacc5c5ebc5b2b3"
     },
     "study/STUDIE-NO.md": {
-      "bytes": 20807,
-      "sha256": "bc62ab4c19a7168d199ecffd21b999df220959b847c2b51d42679c6e8885f24b"
+      "bytes": 315,
+      "sha256": "e28784ca25f28b4c4e4f78e34753c3ca4a4b2bdf027ff00169a9389f27ad0da5"
+    },
+    "study/STUDY.md": {
+      "bytes": 21382,
+      "sha256": "9979dfc9a6b5d4704b7c531caafeb8b282fee2944c27ba786a16dd6f47308755"
     },
     "study/audit.js": {
       "bytes": 3864,
@@ -223,16 +235,16 @@
       "sha256": "22e7e7496c57f3577ec07242825ed5c5e19e4591a1a3771119b5d67cbc22c721"
     },
     "study/report.js": {
-      "bytes": 21256,
-      "sha256": "9606bcb42887926b266fa897a5c5050d2315074ebffd54b9b136615fbee7f6d9"
+      "bytes": 21602,
+      "sha256": "bd3188104ec1fa1d733d73357cb01068625737a8767ce694d037ad38323cd65e"
     },
     "study/reproduce.js": {
       "bytes": 5525,
       "sha256": "b27a20ec7a6c3264259f49f1d5124314ac48b627e7f80728bad1bd12b4ea4d73"
     },
     "study/results/REPORT.md": {
-      "bytes": 18516,
-      "sha256": "e224f8b07900db84555c9c7855ff9491127051203c9a8bb2035880d1661e80a2"
+      "bytes": 18922,
+      "sha256": "f129b8d8560fd0a01922c1af010be42d1e88f6788c1307a0cfe5a32fa525e8b2"
     },
     "study/results/audit.json": {
       "bytes": 548,
@@ -283,8 +295,8 @@
       "sha256": "e3c90d1722c92b66b085816e679391dfbf6ec7baeb45e5e3121b8c5840cbff0a"
     },
     "study/results/report.html": {
-      "bytes": 20605,
-      "sha256": "ad426338bcf65aef3b084caa6d772fd2ac6e4add7b7d6ca22edb47fede314ae3"
+      "bytes": 21023,
+      "sha256": "5d3094f1427db141c940f6300a7cc6828510b553a1202c27c6cb334ec93fe58a"
     },
     "study/results/reproduction-audit.json": {
       "bytes": 3932,
@@ -303,8 +315,8 @@
       "sha256": "bdddfa81f4f4a14ed5f47b821a1259147b2c81c26f1e5653af106a78f80b7668"
     },
     "study/serve.js": {
-      "bytes": 3441,
-      "sha256": "c6fbcaa2768e067e3f98e35db7f2ac86aa1d5170a5038b36cc362bd161f0577b"
+      "bytes": 3502,
+      "sha256": "66807dd34d841a4a876cfb7309eefc521b91413cc37c2926127500dc4052820f"
     },
     "study/verify-evidence.js": {
       "bytes": 1059,

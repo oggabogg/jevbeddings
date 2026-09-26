@@ -1,6 +1,6 @@
 # jevbeddings: a JEV-only retrieval study on BANKING77
 
-Read the [Norwegian study manuscript](STUDIE-NO.md) for the narrative, mathematical methods, results, and limitations. The [technical report](results/REPORT.md) retains the detailed generated tables.
+Read the [study manuscript](STUDY.md) for the narrative, mathematical methods, results, and limitations. The [technical report](results/REPORT.md) retains the detailed generated tables.
 
 Scientific question: how much useful retrieval information can 34 named semantic properties preserve across 77 closely related banking intents?
 
@@ -24,7 +24,7 @@ This study is separate from the 18-feature support demo. Its live document extra
 
 ## Verify the saved study without an API key
 
-See [evidence and provenance](ETTERPROVBARHET.md) for exactly what is preserved, the limits of local timestamps/API logs, and what must accompany a GitHub upload. Extract the complete `results/banking77-reproduction.zip` into an empty directory first if the ignored dataset/database files are absent.
+See [evidence and provenance](EVIDENCE.md) for exactly what is preserved, the limits of local timestamps/API logs, and what must accompany a GitHub upload. Extract the complete `results/banking77-reproduction.zip` into an empty directory first if the ignored dataset/database files are absent.
 
 ```sh
 node study/verify-evidence.js

@@ -1,14 +1,14 @@
 # jevbeddings
 
-Et forsøk med navngitte egenskaper i semantisk søk, med JEV som eneste modell.
+An experiment with named features for semantic retrieval, using JEV as the only model.
 
-**[Les studien på fredrikskauen.no](https://fredrikskauen.no/no/eksperimenter/jevbeddings/)** · [Manuskript](study/STUDIE-NO.md) · [Hva dokumentasjonen viser](study/ETTERPROVBARHET.md)
+**[Read the study](study/STUDY.md)** · [Evidence and provenance](study/EVIDENCE.md) · [Website edition (Norwegian)](https://fredrikskauen.no/no/eksperimenter/jevbeddings/)
 
-Dette repoet inneholder hele BANKING77-forsøket: 10 003 dokumenter, 3 080 testsøk, 34 egenskaper, lagrede JEV-vurderinger og resultater per søk. Kode og data ligger som vanlige Git-filer, slik at beregningene kan etterprøves direkte etter kloning. Ingen API-nøkkel eller nye modellkall er nødvendig.
+This repository contains the complete BANKING77 experiment: 10,003 documents, 3,080 test queries, 34 features, saved JEV assessments, and per-query results. Code and data are stored as ordinary Git files, so you can reproduce the calculations immediately after cloning. No API key or new model calls are required.
 
-## Etterprøv resultatene
+## Reproduce the results
 
-Installer Node.js 24 eller nyere, og kjør:
+Install Node.js 24 or later, then run:
 
 ```sh
 git clone https://github.com/oggabogg/jevbeddings.git
@@ -18,33 +18,35 @@ node --test
 node study/reproduce.js
 ```
 
-Ingen npm-pakker trenger installering. Kjør inventarkontrollen først: reproduksjonen skriver en ny kontrollrapport med nytt tidspunkt. Alle beregninger kjøres på en separat kopi; de opprinnelige rangeringsresultatene overskrives ikke. GitHub Actions kjører de samme kontrollene uten API-nøkkel.
+No npm packages need installing. Run the inventory check first: reproduction writes a new verification report with a new timestamp. All calculations run on a separate copy; the original ranking results are not overwritten. GitHub Actions runs the same checks without an API key.
 
-## Finn materialet
+## Find the material
 
-| Materiale | Plassering |
+| Material | Location |
 | --- | --- |
-| Metode, låste definisjoner og spørsmål | [study/](study/README.md) |
-| Originaltekster og datalisens | [data/banking77/](data/banking77/) |
-| Lagrede JEV-svar og kallmetadata | [study.sqlite](data/banking77/study.sqlite) |
-| Resultater og konfidensintervaller | [results.json](study/results/results.json) |
-| Hvert testsøk | [e1-predictions.jsonl](study/results/e1-predictions.jsonl) |
-| Tilleggssøk, ablasjoner og forklaringer | [study/results/](study/results/) |
-| Kostnadsgrunnlag og skjermbilde | [KOSTNAD.md](study/KOSTNAD.md) |
-| Pakken som ble publisert sammen med studien | [banking77-reproduction.zip](study/results/banking77-reproduction.zip) |
-| Publisering og innholdskontroll | [PUBLICATION.md](docs/PUBLICATION.md) |
+| Methods, frozen definitions, and questions | [study/](study/README.md) |
+| Original texts and data license | [data/banking77/](data/banking77/) |
+| Saved JEV answers and call metadata | [study.sqlite](data/banking77/study.sqlite) |
+| Results and confidence intervals | [results.json](study/results/results.json) |
+| Every test query | [e1-predictions.jsonl](study/results/e1-predictions.jsonl) |
+| Supplemental queries, ablations, and explanations | [study/results/](study/results/) |
+| Cost evidence and dashboard screenshot | [COSTS.md](study/COSTS.md) |
+| Original archive published with the Norwegian study | [banking77-reproduction.zip](study/results/banking77-reproduction.zip) |
+| Publication record and content checks | [PUBLICATION.md](docs/PUBLICATION.md) |
 
-JEV med cosinus ga riktig første treff i **83,67 %** av søkene, mot **80,10 %** for BM25. Differansen var 3,57 prosentpoeng, med paret 95 % bootstrap-intervall 1,92–5,26. JEV med vanlig eller vektet dot product gjorde det dårligere. Forsøket gjelder dette datasettet og oppsettet; det sammenligner ikke med ordinære embeddingmodeller.
+JEV with cosine retrieved a correct first result for **83.67%** of queries, compared with **80.10%** for BM25. The difference was 3.57 percentage points, with a paired 95% bootstrap interval of 1.92–5.26. JEV with ordinary or weighted dot product performed worse. These findings apply to this dataset and setup; the study does not compare against conventional embedding models.
 
-Materialet viser hvordan resultatene følger av de lagrede svarene. Lokale logger, kontrollsummer og tidsstempler er ikke signerte bekreftelser fra leverandøren eller en offentlig forhåndsregistrering.
+The material shows how the results follow from the saved answers. Local logs, checksums, and timestamps are not signed confirmations from the provider or a public preregistration.
 
-BANKING77 er utgitt av Casanueva og kolleger under [CC-BY-4.0](data/banking77/LICENSE), med kreditering i [studiedokumentasjonen](study/README.md#attribution). Prosjektets egen kode har foreløpig ingen separat gjenbrukslisens.
+BANKING77 was released by Casanueva and colleagues under [CC-BY-4.0](data/banking77/LICENSE), with attribution in the [study documentation](study/README.md#attribution). The project's own code does not yet have a separate reuse license.
+
+Repository documentation and generated reports are in English. The original ZIP remains an unchanged historical snapshot and includes Norwegian prose; the website edition is also in Norwegian.
 
 ---
 
-# Supportdemo og utvikling
+# Support demo and development
 
-Denne delen beskriver den separate prototypen med 18 egenskaper. BANKING77-studien over bruker 34.
+This section describes the separate 18-feature prototype. The BANKING77 study above uses 34 features.
 
 A working support-message retrieval prototype: JEV produces 18 named semantic features, SQLite stores their values, and deterministic weighted scoring ranks documents. JEV is the only model. There are no embeddings, vector databases, learned rankers, or other AI service dependencies.
 
